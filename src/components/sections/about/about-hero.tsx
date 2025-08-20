@@ -11,7 +11,8 @@ const AboutHero = () => {
     <SectionContainer
       ref={targetRef}
       className={`
-      bg-[url('/images/about-hero-vector.svg')]
+        section-bg
+        bg-[url('/images/about-hero-vector.svg')]
         md:max-w-[75%]
         ml-auto
         bg-center

@@ -7,31 +7,29 @@
 }
 
 .section-bg {
-width: 100vw;
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-position: relative;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 .section-bg::before,
 .section-bg::after {
+  background-image: url("/images/hand-vector.svg");
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.5;
 }
-.section-bg::before{
-  background-image: url("/images/hand-vector.svg");
+
+.section-bg::after {
+  content: " ";
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.section-bg::after{
-  content: " ";
-  opacity: 0.5;
-  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.1;
 }

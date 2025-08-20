@@ -48,15 +48,9 @@ const DoctorsSection: React.FC = () => {
   return (
         <SectionContainer
           ref={targetRef}
-          style={{
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundImage: `url("/images/hand-vector.svg")`,
-          }}
           id="#section-container"
-          wraperClassName="items-center justify-center bg-white opacity-95"
-          className={` ease-in-out duration-1000 ${
+          wraperClassName="items-center justify-center "
+          className={`section-bg ease-in-out duration-1000 ${
             isInView ? "opacity-100" : "opacity-0"
           }`}
         >

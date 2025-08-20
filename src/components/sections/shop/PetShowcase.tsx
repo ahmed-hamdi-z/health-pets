@@ -31,15 +31,9 @@ const PetShowcase: React.FC<PetShowcaseProps> = ({
   return (
     <SectionContainer
       ref={targetRef}
-      style={{
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundImage: `url("/images/hand-vector.svg")`,
-      }}
       id="#section-container"
-      wraperClassName="bg-white opacity-90"
-      className={` ease-in-out duration-1000 ${
+      wraperClassName=""
+      className={`section-bg ease-in-out duration-1000 ${
         isInView ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -73,7 +67,7 @@ const PetShowcase: React.FC<PetShowcaseProps> = ({
       {/* Right Image */}
       <div className="w-1/2 hidden md:flex">
         <div
-          className="bg-cover bg-no-repeat w-full h-full flex items-center justify-center translate-y-14"
+          className="bg-cover bg-no-repeat w-full h-full flex items-center justify-center translate-y-14 opacity-100"
           style={{
             backgroundImage: `url("/images/Vector.svg")`,
           }}
