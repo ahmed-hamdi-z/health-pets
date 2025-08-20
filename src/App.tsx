@@ -1,9 +1,11 @@
-// import PetShowcase from "./components/PetShowcase";
-
 import Header from "./components/Header";
 import Layout from "./Layout";
 import Providers from "./providers";
 import Routers from "./routers";
+import "swiper/swiper-bundle.css";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 function App() {
   return (

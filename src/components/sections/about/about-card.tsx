@@ -20,7 +20,7 @@ const AboutUsCard: React.FC<AboutUsCardProps> = ({
   return (
     <div
       className={`flex flex-row items-center md:w-5/6 ${className} ${
-        isImageLeft ? "flex-row" : "flex-row-reverse ml-auto "
+        isImageLeft ? "flex-row text-center" : "flex-row-reverse ml-auto text-center "
       }`}
     >
       {/* Text Content Section */}
@@ -29,7 +29,7 @@ const AboutUsCard: React.FC<AboutUsCardProps> = ({
           {title}
         </h3>
         {subtitle && <h4 className="text-base md:text-lg">{subtitle}</h4>}
-        <p className="text-clip drop-shadow-md md:w-1/2 w-3/4 md:mx-auto">
+        <p className="text-clip drop-shadow-md md:w-1/2 w-3/4 md:mx-auto ">
           {content}
         </p>
       </div>

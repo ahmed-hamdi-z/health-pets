@@ -21,7 +21,7 @@ const ExperienceSection = () => {
     >
       <div className="flex flex-col md:flex-row">
         {/* Left Card */}
-        <div className="flex flex-col items-center justify-center w-full md:w-1/3 md:translate-x-1/4 md:translate-y-10 translate-y-1/4">
+        <div className="flex flex-col items-center justify-center w-full md:w-1/3 md:translate-x-1/4 md:-translate-y-5 translate-y-5">
           <div className="leading-tight flex flex-col items-center justify-center md:-translate-x-1/4">
             <div className=" gap-2 -mb-5">
               <span className="block text-gray-700 text-3xl font-medium -mb-32">
@@ -50,7 +50,15 @@ const ExperienceSection = () => {
         </div>
 
         {/* Right Card */}
-        <div className="flex items-center justify-center w-full md:w-1/3 md:-translate-x-1/3 md:translate-y-1/3 -translate-y-1/4">
+        <div className="flex flex-col tems-center justify-center w-full md:w-1/3 md:-translate-x-1/4 md:translate-y-15 -translate-y-1/4 gap-10">
+           <div
+                className="bg-no-repeat bg-contain ml-auto md:flex hidden"
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  backgroundImage: `url("/images/hand.svg")`,
+                }}
+              />
           <InfoCard
             title="lorem"
             description="The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps..."

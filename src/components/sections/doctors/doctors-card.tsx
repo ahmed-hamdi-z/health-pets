@@ -12,7 +12,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
   image,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-3xl overflow-hidden flex flex-col">
+    <div className="bg-white shadow-md rounded-3xl overflow-hidden flex flex-col ">
       {/* Header */}
       <div className="bg-cyan-600 text-white font-semibold px-4 py-2">
         {name}

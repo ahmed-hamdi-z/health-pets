@@ -2,6 +2,7 @@ import PageContainer from "../components/containers/PageContainer";
 import AdviceSection from "../components/sections/advice";
 import ExperienceSection from "../components/sections/experience";
 import HomeHero from "../components/sections/HomeHero";
+// import OurProjects from "../components/sections/OurProjects";
 import ServicesSection from "../components/sections/services";
 import PetShowcase from "../components/sections/shop/PetShowcase";
 
@@ -12,6 +13,8 @@ const Home = () => {
       <ExperienceSection />
       <ServicesSection />
       <AdviceSection />
+      {/* <OurProjects /> */}
+
       <>
         <PetShowcase
           title="Explore all"

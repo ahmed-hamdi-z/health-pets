@@ -1,6 +1,7 @@
 import React from "react";
 import DoctorCard from "./doctors-card";
 import SectionContainer from "../../containers/SectionContainer";
+import useScrollInToView from "../../../hooks/useScrollInToView";
 
 const doctors = [
   {
@@ -42,8 +43,23 @@ const doctors = [
 ];
 
 const DoctorsSection: React.FC = () => {
+  const { targetRef, isInView } = useScrollInToView();
+
   return (
-    <SectionContainer className="w-full bg-gray-50">
+        <SectionContainer
+          ref={targetRef}
+          style={{
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundImage: `url("/images/hand-vector.svg")`,
+          }}
+          id="#section-container"
+          wraperClassName="items-center justify-center bg-white opacity-95"
+          className={` ease-in-out duration-1000 ${
+            isInView ? "opacity-100" : "opacity-0"
+          }`}
+        >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-10">
         {doctors.map((doc, index) => (
           <DoctorCard
