@@ -34,16 +34,16 @@ const AboutHero = () => {
         className={trim(`
           flex 
           flex-col 
-          md:items-stretch
           items-center 
+          justify-center
           md:gap-4 
           text-center 
-          md:text-justify
           h-full`)}
       >
         <h1
           className={trim(`
-            text-responsive-cover
+            text-5xl
+            text-white
             font-semibold
             text-primary
             transition-[transform, opacity]
@@ -52,37 +52,9 @@ const AboutHero = () => {
             ${isInView ? "opacity-100" : "opacity-0"}
             ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
         >
-          {t("hero.title")}
+          {t("about.title")}
         </h1>
-        <div
-          className={trim(`
-            pl-5 
-            md:leading-[3.8rem]
-            mb-4 
-            transition-[opacity]
-            duration-500
-            ease-in-out
-            delay-300
-            ${isInView ? "opacity-100" : "opacity-0"}
-            ${i18n.language === "ar" ? "md:max-w-[70%]" : ""}`)}
-        >
-          <h3
-            className={trim(`
-              text-responsive-subCover 
-              text-primary
-              font-light`)}
-          >
-            {t("hero.subtitle")}
-          </h3>
-          <h3
-            className={trim(`
-              text-responsive-subCover 
-              text-primary
-              font-bold`)}
-          >
-            {t("coName", { ns: "common" })}
-          </h3>
-        </div>
+
       </div>
     </SectionContainer>
   );

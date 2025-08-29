@@ -2,6 +2,8 @@ import PageContainer from "../components/containers/PageContainer";
 import AdviceSection from "../components/sections/advice";
 import ExperienceSection from "../components/sections/experience";
 import HomeHero from "../components/sections/HomeHero";
+import Reels from "../components/sections/reels";
+import { StaggerTestimonials } from "../components/sections/reviews";
 // import OurProjects from "../components/sections/OurProjects";
 import ServicesSection from "../components/sections/services";
 import PetShowcase from "../components/sections/shop/PetShowcase";
@@ -10,9 +12,10 @@ const Home = () => {
   return (
     <PageContainer>
       <HomeHero />
+      <AdviceSection />
       <ExperienceSection />
       <ServicesSection />
-      <AdviceSection />
+      <Reels />
       {/* <OurProjects /> */}
 
       <>
@@ -31,6 +34,8 @@ const Home = () => {
           petImage="/images/cat-shop.png"
         />
       </>
+
+      <StaggerTestimonials />
     </PageContainer>
   );
 };

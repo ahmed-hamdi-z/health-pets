@@ -2,56 +2,35 @@ import type { AdviceColumnProps } from ".";
 
 const AdviceColumn: React.FC<AdviceColumnProps> = ({
   title,
-  paragraphs,
   className = "",
   petImage,
   petImageAlt = "Pet image",
 }) => {
   return (
-    <div className={`flex flex-col drop-shadow-md drop-shadow-[#a4f9ff] ${className}`}>
-      {/* advice card */}
-      <div className="text-sm lowercase mx-auto max:w-7/12 z-10 ">
-        <div
-          className="bg-gradient-to-tr from-[#69CBDA] to-[#fff] pl-16 p-6 rounded-r-full rounded-tl-full 
-      md:translate-y-20 md:translate-x-20 
-      lg:translate-y-20 lg:translate-x-30
-      sm:translate-y-10 sm:translate-x-10
-      translate-y-15 translate-x-10 
-      opacity-85 shadow-2xl"
-        >
-          <img
-            src="/images/Idea.png"
-            width={60}
-            height={60}
-            alt=""
-            className=" absolute -top-5 left-12 bg-white p-2 rounded-full"
-          />
-          <h2 className="pl-12 text-[#4C4C4C] uppercase font-stretch-95% text-2xl ">{title}</h2>
-          {paragraphs.map((paragraph, index) => (
-            <p
-              key={index}
-              className={` drop-shadow-md pl-10 text-xs text-[#4C4C4C] ${
-                index === paragraphs.length - 1 ? "" : ""
-              }`}
-            >
-              {paragraph}
-            </p>
-          ))}
-        </div>
+    <div className={`w-full flex flex-col items-center  ${className}`}>
+      <div className="relative md:w-1/2 w-[90%] flex flex-col items-center justify-center bg-amber-400 rounded-tl-full rounded-r-full translate-y-1/4 z-50 opacity-85">
+        <img
+          src="/images/Idea.png"
+          width={40}
+          height={40}
+          alt=""
+          className="absolute left-0 top-0 translate-x-1/2 -translate-y-1/2"
+        />
+        <h2 className="text-[#4C4C4C] uppercase text-2xl ">{title}</h2>
+
+        <p className="text-[#4C4C4C] text-sm lowercase px-6 py-3">
+          THE QUICK, BROWN FOX JUMPS OVER A LAZY DOG. HIV XA OUTS PROG. JUNK HIV
+          OUTS CHACED BY JOB, FLICK QUARTZ, VEX NYMPHS, WALTZ, BAD. VISIT FOX
+          WINDING
+        </p>
       </div>
-      <div
-        className="bg-cover bg-no-repeat py-11 pl-3  drop-shadow-md drop-shadow-[#51abff]"
-        style={{
-          backgroundImage: `url("/images/advice-vector.svg")`,
-        }}
-      >
-        {" "}
+      <div className="bg-[url(/images/advice-vector.svg)] bg-left bg-no-repeat bg-contain z-10">
         <img
           src={petImage}
           alt={petImageAlt}
-          className=" rounded-bl-[37%] rounded-br-[60%] translate-y-11"
+          className="-translate-x-10 translate-y-10 rounded-bl-[300px] rounded-br-[450px] p-10"
         />
-      </div>{" "}
+      </div>
     </div>
   );
 };

@@ -33,50 +33,32 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
     <SectionContainer
       ref={targetRef}
       id="#section-container"
-      wraperClassName=""
-      className={`section-bg ease-in-out duration-1000 ${
+      className={`w-full section-bg ease-in-out duration-1000  ${
         isInView ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12  items-center">
-          {/* Advice Column */}
-          <AdviceColumn
-            petImage="/images/advice.png"
-            title="Advice"
-            paragraphs={adviceText}
-          />
-          <div className="flex flex-col">
-            <div className="translate-y-10 p-2">
-              <div
-                className="bg-no-repeat bg-contain -translate-x-5 mx-auto"
-                style={{
-                  width: "90px",
-                  height: "90px",
-                  backgroundImage: `url("/images/hand.svg")`,
-                }}
-              />
-            </div>
+      <div className="flex flex-col md:flex-row items-center ">
+        <AdviceColumn
+          petImage="/images/advice.png"
+          title="Advice"
+          paragraphs={adviceText}
+        />
 
-            {/* Core Values Column */}
-            <div className="space-y-2">
-              <h2 className="text-3xl sm:text-5xl font-bold text-[#4C4C4C]">
-                Core Values
-              </h2>
-              <div>
-                {coreValues.map((value, index) => (
-                  <CoreValueCard
-                    key={index}
-                    title={value.title}
-                    description={value.description}
-                  />
-                ))}
-              </div>
-              <button className="translate-y-5 translate-x-32 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs ">
-                {ctaText}
-              </button>
-            </div>
-          </div>
+        <div className="space-y-2 px-4 w-full h-[70%] place-content-end md:translate-x-1/12 -translate-y-16">
+          <div className="bg-no-repeat bg-contain md:w-42 md:h-42 w-24 h-24 bg-[url('/images/hand.svg')] md:mx-auto ml-auto translate-y-1/4" />
+          <h2 className="text-3xl sm:text-5xl font-bold text-[#4C4C4C]">
+            Core Values
+          </h2>
+          {coreValues.map((value, index) => (
+            <CoreValueCard
+              key={index}
+              title={value.title}
+              description={value.description}
+            />
+          ))}
+          <button className="translate-y-5 translate-x-32 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs ">
+            {ctaText}
+          </button>
         </div>
       </div>
     </SectionContainer>

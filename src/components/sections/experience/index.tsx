@@ -45,14 +45,14 @@ const ExperienceSection = () => {
 
         {/* Right Card */}
         <div className="flex flex-col tems-center justify-center w-full md:w-1/3 md:-translate-x-1/4 md:translate-y-15 -translate-y-1/4 gap-10">
-           <div
-                className="bg-no-repeat bg-contain ml-auto md:flex hidden"
-                style={{
-                  width: "250px",
-                  height: "250px",
-                  backgroundImage: `url("/images/hand.svg")`,
-                }}
-              />
+          <div
+            className="bg-no-repeat bg-contain ml-auto md:flex hidden"
+            style={{
+              width: "250px",
+              height: "250px",
+              backgroundImage: `url("/images/hand.svg")`,
+            }}
+          />
           <InfoCard
             title="lorem"
             description="The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps..."

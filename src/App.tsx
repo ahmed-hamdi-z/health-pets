@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Layout from "./Layout";
 import Providers from "./providers";
 import Routers from "./routers";
+import Footer from "./components/Footer";
 import "swiper/swiper-bundle.css";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
@@ -13,7 +14,7 @@ function App() {
       <Layout>
         <Header />
         <Routers />
-        {/* <Footer /> */}
+        <Footer />
       </Layout>
     </Providers>
   );
