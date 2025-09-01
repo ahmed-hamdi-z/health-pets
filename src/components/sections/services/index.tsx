@@ -13,37 +13,37 @@ export interface ServiceCardProps {
 }
 const services: ServiceCardProps[] = [
   {
-    image: "/images/advice.png",
+    image: "/images/serj.png",
     title: "Surgical operations",
     description:
       "The quick brown fox jumps over the lazy dog. Donec nec justo eget felis facilisis fermentum.",
   },
   {
-    image: "/images/advice.png",
+    image: "/images/24h.png",
     title: "24-hour emergency service",
     description:
       "Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
   },
   {
-    image: "/images/advice.png",
-    title: "Mobile Veterinary Clinic",
+    image: "/images/mobile.png",
+    title: "Home Delevery",
     description:
       "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a.",
   },
   {
-    image: "/images/advice.png",
-    title: "Rays",
+    image: "/images/x-rays.png",
+    title: "X-Rays",
     description:
       "Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat.",
   },
   {
-    image: "/images/advice.png",
-    title: "24-hour emergency service",
+    image: "/images/hotel.png",
+    title: "boarding",
     description:
       "Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
   },
   {
-    image: "/images/advice.png",
+    image: "/images/spec.png",
     title: "Specialized veterinarians",
     description:
       "Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate.",

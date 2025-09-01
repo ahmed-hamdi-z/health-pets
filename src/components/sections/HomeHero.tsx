@@ -33,8 +33,8 @@ const HomeHero = () => {
         className={trim(`
           overflow-hidden
           absolute 
-          bottom-1/7 
-          right-1/6 
+          bottom-1/9
+          right-1/9
           md:flex 
           flex-col 
           items-center
@@ -68,19 +68,12 @@ const HomeHero = () => {
             ${isInView ? "opacity-100" : "opacity-0"}
             ${i18n.language === "ar" ? "md:max-w-[70%]" : ""}`)}
         >
-          {/* <h3
-            className={trim(`
-              text-responsive-subCover 
-              text-primary
-              font-light`)}
-          >
-            {t("hero.subtitle")}
-          </h3> */}
+
           <h3
             className={trim(`
               text-responsive-subCover 
               text-4xl
-              font-bold`)}
+              font-bold text-white`)}
           >
             {/* {t("coName", { ns: "common" })} */} Healthy pets... Happy
             Gets...

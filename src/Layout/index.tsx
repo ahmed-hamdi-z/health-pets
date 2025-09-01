@@ -1,5 +1,6 @@
 import type {  HTMLAttributes, ReactNode } from "react";
 import { trim } from "../utils/general";
+import FloatingButtons from "../components/FloatingButtons";
 
 export default function Layout({
   children,
@@ -23,7 +24,7 @@ export default function Layout({
       {...attributes}
     >
       {children}
-      {/* <FloatingButtons /> */}
+      <FloatingButtons />
     </div>
   );
 }

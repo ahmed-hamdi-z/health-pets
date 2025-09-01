@@ -44,7 +44,6 @@ export const StaggerTestimonials = () => {
         copy.unshift({ ...lastEl, tempId: Math.random() });
       }
     }
-
     setTestimonials(copy);
   };
 
@@ -76,7 +75,7 @@ export const StaggerTestimonials = () => {
     <div className="flex flex-col items-center">
     <SectionHeader className="" title="Testimonials" />
     <div
-      className="relative w-full overflow-hidden bg-neutral-200 mb-20"
+      className="relative w-full overflow-hidden bg-[#99D8E0] mb-20"
       style={{
         height: SECTION_HEIGHT,
       }}
@@ -141,12 +140,9 @@ const TestimonialCard = ({
       onClick={() => handleMove(position)}
       className={`
       absolute left-1/2 top-1/2 cursor-pointer p-8 transition-colors duration-500 ${
-        isActive ? "z-10 bg-indigo-600" : "z-0 bg-white"
+        isActive ? "z-10 bg-[#99D8E0]" : "z-0 bg-white"
       }
       `}
-      style={{
-        borderWidth: BORDER_SIZE,
-      }}
       animate={{
         width: cardSize,
         height: cardSize,
@@ -155,7 +151,7 @@ const TestimonialCard = ({
           isActive ? CENTER_STAGGER : position % 2 ? STAGGER : -STAGGER
         }px)`,
         rotate: isActive ? 0 : position % 2 ? ROTATE_DEG : -ROTATE_DEG,
-        boxShadow: isActive ? "0px 8px 0px 4px black" : "0px 0px 0px 0px black",
+        boxShadow: isActive ? "0px 8px 0px 4px white" : "0px 0px 0px 0px white",
       }}
       transition={{
         type: "spring",
@@ -165,7 +161,7 @@ const TestimonialCard = ({
       }}
     >
       <span
-        className="absolute block origin-top-right rotate-45  object-cover"
+        className="absolute block origin-top-right rotate-45 object-cover"
         style={{
           right: -BORDER_SIZE,
           top: CORNER_CLIP - BORDER_SIZE,
@@ -183,7 +179,7 @@ const TestimonialCard = ({
       />
       <h3
         className={`text-base sm:text-xl ${
-          isActive ? "text-white" : "text-black"
+          isActive ? "text-white" : ""
         }`}
       >
         "{testimonial.testimonial}"

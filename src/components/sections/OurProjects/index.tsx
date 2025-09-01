@@ -8,14 +8,9 @@ import ProjectCard from "./ProjectCard";
 import projectOne from "/images/cat.jpg";
 
 import SectionContainer from "../../containers/SectionContainer";
+import SectionHeader from "../../SectionHeader";
 
 const images: { src: string }[] = [
-  { src: projectOne },
-  { src: projectOne },
-  { src: projectOne },
-  { src: projectOne },
-  { src: projectOne },
-  { src: projectOne },
   { src: projectOne },
   { src: projectOne },
   { src: projectOne },
@@ -32,19 +27,22 @@ const OurProjects = () => {
   // const { t } = useTranslation(["home"]);
 
   return (
-    <SectionContainer className="w-full h-screen">
-      {/* <SectionHeader title={t("ourProjects.title")} /> */}
-      <ul className="col-span-1 row-span-2 md:col-span-1 md:row-span-1">
-        {images.map((image, i) => (
-          <ProjectCard image={image} key={i} setOpen={setOpen} />
-        ))}
-      </ul>
-      <Lightbox
-        plugins={[Captions, Zoom, Thumbnails]}
-        open={open}
-        slides={images}
-        close={() => setOpen(false)}
-      />
+    <SectionContainer>
+      <div className="flex flex-col items-center justify-center mx-auto">
+        <SectionHeader title="Projects" />
+        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-5 ">
+          {images.map((image, i) => (
+            <ProjectCard image={image} key={i} setOpen={setOpen} />
+          ))}
+        </ul>
+        <Lightbox
+          plugins={[Captions, Zoom, Thumbnails]}
+          open={open}
+          slides={images}
+          close={() => setOpen(false)}
+        />
+      </div>
+
     </SectionContainer>
   );
 };

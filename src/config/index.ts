@@ -8,6 +8,7 @@ const appRoutes = {
   home: "/",
   about: "/about-us",
   products: "/our-products",
+  services: "/our-services",
   treatments: "/our-treatments",
   blogs: "/blogs",
   articlesQuery: {
@@ -23,15 +24,15 @@ const apiRoutes = {
 };
 
 const info = {
-  email: "info@daralnawati.sa",
-  phone: "+966 56 537 1008",
-  whatsapp: "https://wa.me/966565371008",
-  facebook: "https://www.facebook.com/share/18sBvtJURJ/?mibextid=wwXIfr",
-  instagram: "https://www.instagram.com/daralnawatico/",
+  email: "info@healthypets.com.sa",
+  phone: "+966 00 000 000",
+  whatsapp: "https://wa.me/0000 00 00",
+  facebook: "https://www.facebook.com/",
+  instagram: "https://www.instagram.com/",
   location: {
-    en: "1 Al Sahili Center - Baladiyah St. - Jeddah",
-    ar: "١ مركز السحيلى - شارع البلديه - جدة",
-    maps: "https://maps.app.goo.gl/UseKWf9THHLY2yGr8",
+    en: "",
+    ar: "",
+    maps: "https://maps.app.goo.gl/",
   },
   // products: {
   //   catalog: catalogPdf,

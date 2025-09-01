@@ -4,7 +4,7 @@ import ExperienceSection from "../components/sections/experience";
 import HomeHero from "../components/sections/HomeHero";
 import Reels from "../components/sections/reels";
 import { StaggerTestimonials } from "../components/sections/reviews";
-// import OurProjects from "../components/sections/OurProjects";
+import OurProjects from "../components/sections/OurProjects";
 import ServicesSection from "../components/sections/services";
 import PetShowcase from "../components/sections/shop/PetShowcase";
 
@@ -16,7 +16,7 @@ const Home = () => {
       <ExperienceSection />
       <ServicesSection />
       <Reels />
-      {/* <OurProjects /> */}
+      <OurProjects />
 
       <>
         <PetShowcase

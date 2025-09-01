@@ -23,7 +23,8 @@ const ProjectCard = ({
       <img
         src={image.src}
         alt="gallery"
-        className="cursor-pointer hover:scale-105 transform transition-transform rounded-lg hover:shadow-2xl"
+        loading="lazy"
+        className="cursor-pointer hover:scale-105 transform transition-transform rounded-lg hover:shadow-2xl w-96 h-96  "
         onClick={() => setOpen(true)}
       />
     </li>

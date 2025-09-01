@@ -16,26 +16,26 @@ const ExperienceSection = () => {
       <div className="flex flex-col md:flex-row">
         {/* Left Card */}
         <div className="flex flex-col items-center justify-center w-full md:w-1/3 md:translate-x-1/4 md:-translate-y-5 translate-y-5">
-          <div className="leading-tight flex flex-col items-center justify-center md:-translate-x-1/4">
-            <div className=" gap-2 -mb-5">
-              <span className="block text-gray-700 text-3xl font-medium -mb-32">
-                Years
+          <div className="leading-tight md:translate-y-1/4">
+            <div className=" gap-2 -mb-5 ">
+              <span className="block text-gray-700 text-4xl font-medium translate-y-28">
+                More
               </span>
-              <span className="text-gray-800 text-6xl font-bold">of</span>
-              <span className="text-sky-400 text-[12rem] font-bold">40</span>
+              <span className="text-[#4C4C4C] text-2xl font-bold">Than</span>
+              <span className="text-[#99D8E0] text-[12rem] font-bold">40</span>
             </div>
             <span className="block text-gray-700 text-6xl font-semibold mt-2 mb-5">
-              Experience
+              Products
             </span>
           </div>
           <InfoCard
-            title="lorem"
-            description="The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps..."
+            title="Vision"
+            description="Pets bring joy to families and strengthen bonds. They also lower stress, fight loneliness."
           />
         </div>
 
         {/* Image */}
-        <div className="w-full md:w-1/3 flex justify-center">
+        <div className="w-full md:w-1/3 flex justify-center ">
           <img
             className="rounded-full object-cover w-72 h-[400px] sm:w-64 sm:h-64 md:w-80 md:h-96 lg:w-[350px] lg:h-[650px]"
             src="/images/cat-exp.png"
@@ -44,9 +44,9 @@ const ExperienceSection = () => {
         </div>
 
         {/* Right Card */}
-        <div className="flex flex-col tems-center justify-center w-full md:w-1/3 md:-translate-x-1/4 md:translate-y-15 -translate-y-1/4 gap-10">
+        <div className="flex flex-col items-center justify-center w-full md:w-1/3 md:-translate-x-1/4 md:-translate-y-5 -translate-y-1/4 gap-10">
           <div
-            className="bg-no-repeat bg-contain ml-auto md:flex hidden"
+            className="bg-no-repeat bg-contain ml-auto md:flex hidden translate-y-52"
             style={{
               width: "250px",
               height: "250px",
@@ -54,8 +54,8 @@ const ExperienceSection = () => {
             }}
           />
           <InfoCard
-            title="lorem"
-            description="The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps..."
+            title="Misson"
+            description="Having pets teaches responsibility and kindness. They reduce stress, give comfort, and help children "
           />
         </div>
       </div>

@@ -52,7 +52,7 @@ const AboutHero = () => {
             ${isInView ? "opacity-100" : "opacity-0"}
             ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
         >
-          {t("about.title")}
+          {t("About Us")}
         </h1>
 
       </div>

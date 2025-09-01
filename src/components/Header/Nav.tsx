@@ -9,6 +9,7 @@ import { useContext } from "react";
 import useActivation from "../../hooks/useActivation";
 import DrawerContext from "../context/drawer.context";
 import { trim } from "../../utils/general";
+import Logo from "../Logo";
 
 const Nav = () => {
   const { t, i18n } = useTranslation("header");
@@ -17,12 +18,12 @@ const Nav = () => {
   const push = useNavigate();
 
   const navArr = [
-    { name: t("nav.home"), link: appRoutes.home },
-    { name: t("nav.about"), link: appRoutes.about },
-    { name: t("nav.products"), link: appRoutes.products },
-    { name: t("nav.blogs"), link: appRoutes.blogs },
-    { name: t("nav.treatments"), link: appRoutes.treatments },
-    { name: t("nav.contact"), link: appRoutes.contact },
+    { name: t("Home"), link: appRoutes.home },
+    { name: t("About Us"), link: appRoutes.about },
+    { name: t("Products"), link: appRoutes.products },
+    { name: t("Services"), link: appRoutes.services },
+    { name: t("Blogs"), link: appRoutes.blogs },
+    { name: t("Contact Us"), link: appRoutes.contact },
   ];
 
   const { activationArr } = useActivation(navArr.length, 300);
@@ -45,8 +46,14 @@ const Nav = () => {
         w-full
         md:px-[3%]
         lg:px-[10%]
-        xl:px-[15%]`)}
+        xl:px-[15%]
+        text-white
+        `)}
     >
+      <Logo
+        onClick={() => onClickHandler(appRoutes.home)}
+        className="cursor-pointer w-40 md:w-32 -translate-x-10/12"
+      />
       {navArr.slice(0, 3).map(({ name, link }, i) => (
         <button
           key={i}
@@ -68,11 +75,6 @@ const Nav = () => {
           {name}
         </button>
       ))}
-
-      {/* <Logo
-        onClick={() => onClickHandler(appRoutes.home)}
-        className="cursor-pointer w-40 md:w-52"
-      /> */}
 
       {navArr.slice(3).map(({ name, link }, i) => (
         <button

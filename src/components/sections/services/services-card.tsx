@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import type { ServiceCardProps } from "./index";
 import useScrollInToView from "../../../hooks/useScrollInToView";
+import { appRoutes } from "../../../config";
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   image,
@@ -20,12 +21,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         isInView && parentInToView ? "opacity-100" : "opacity-0"
       }`}
     >
-      <img src={image} alt={title} className="w-24 h-24 object-contain mb-4" />
+      <img src={image} alt={title} className="w-32 h-32 object-contain mb-4" />
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-sm text-gray-600 mb-4">{description}</p>
-      <button className="bg-orange-400 text-white font-medium px-4 py-2 rounded-full hover:bg-orange-500 transition">
+      <a href={appRoutes.services} className="bg-orange-600 text-white font-medium px-4 py-2 rounded-full hover:bg-orange-500 transition">
         {buttonText}
-      </button>
+      </a>
     </div>
   );
 };
