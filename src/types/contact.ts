@@ -1,4 +1,4 @@
-type Contact = {
+export type Contact = {
   name: string;
   email: string;
   type: string;
@@ -11,5 +11,4 @@ type ContactTypes = {
   value: string;
 }[];
 
-export default Contact;
 export type { ContactTypes };

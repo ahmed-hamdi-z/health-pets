@@ -10,8 +10,8 @@ import { appRoutes } from "../../../config";
 import useActivation from "../../../hooks/useActivation";
 import SectionContainer from "../../containers/SectionContainer";
 import { trim } from "../../../utils/general";
-import ArticlesEnum from "../../../enum/Articles";
 import SimpleCard from "../../SimpleCard";
+import { ArticlesEnum } from "../../../enum/Articles";
 
 const BlogsHero = () => {
   const { t } = useTranslation(["blogs", "common"]);

@@ -8,10 +8,10 @@ import "react-phone-number-input/style.css";
 import { send } from "@emailjs/browser";
 //import { createContact } from "../../../api/routes/cards";
 import toast from "react-hot-toast";
-import type Contact from "../../../types/contact";
 import { trim } from "../../../utils/general";
 import InputStyled from "../../InputStyled";
 import ButtonStyled from "../../ButtonStyled";
+import type { Contact } from "../../../types/contact";
 
 const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
