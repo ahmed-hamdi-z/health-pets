@@ -1,5 +1,3 @@
-"use client";
-
 import getClasses, { formatClasses } from "./classes";
 
 const Error = ({

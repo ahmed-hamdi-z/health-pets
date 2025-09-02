@@ -1,4 +1,4 @@
-import { MouseEvent, useCallback, useEffect, useRef, useState } from "react";
+import { type MouseEvent, useCallback, useEffect, useRef, useState } from "react";
 import styles from "../button-styles.module.css";
 
 const useRippleEffect = (
