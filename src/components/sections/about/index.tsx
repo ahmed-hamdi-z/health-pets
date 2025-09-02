@@ -13,7 +13,7 @@ const AboutUsSection: React.FC = () => {
             content="Our mission at Healthy Pets is to deliver exceptional veterinary care and preventive services for pets and their families in Riyadh. using advanced technology and modern treatments."
             imageUrl="/images/about-mission.png"
             imagePosition="left"
-            className="rounded-r-full bg-[#69CBDA]"
+            className="rounded-r-full bg-[#99D8E0]/70"
           />
 
           {/* Vision Card */}
@@ -22,7 +22,7 @@ const AboutUsSection: React.FC = () => {
             content="To be Riyadh's premier pet healthcare destination, offering state-of-the-artmedical services in a luxurious,nurturing environment"
             imageUrl="/images/about-vision.png"
             imagePosition="right"
-            className="rounded-l-full bg-[#F79437]"
+            className="rounded-l-full bg-[#F9EFA7]"
           />
 
           {/* Core Values Card */}
@@ -31,7 +31,7 @@ const AboutUsSection: React.FC = () => {
             content="Compassion: Treating pets as family. Excellence: Providing top-quality veterinary care Trust: Transparency and reliability. Innovation: Cutting-edge treatments "
             imageUrl="/images/about-value.png"
             imagePosition="left"
-            className="rounded-r-full bg-[#69CBDA]"
+            className="rounded-r-full bg-[#99D8E0]/70"
           />
         </div>
       </div>

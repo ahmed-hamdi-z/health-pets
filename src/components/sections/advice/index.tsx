@@ -56,7 +56,7 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
               description={value.description}
             />
           ))}
-          <button className="translate-y-5 translate-x-32 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs ">
+          <button className="translate-y-12 translate-x-40 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
             {ctaText}
           </button>
         </div>

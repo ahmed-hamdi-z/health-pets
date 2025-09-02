@@ -7,6 +7,7 @@ import Blogs from "../pages/Blogs";
 import NotFound from "../pages/NotFound";
 import Products from "../pages/Products";
 import Services from "../pages/Services";
+import Loading from "../pages/Loading";
 
 // const NotFound = lazy(() => import("../pages/NotFound"));
 const Home = lazy(() => import("../pages/Home"));
@@ -19,7 +20,7 @@ const Home = lazy(() => import("../pages/Home"));
 
 export default function Routers() {
   return (
-    <Suspense fallback="...loagding">
+    <Suspense fallback={<Loading />}>
       <Routes>
         <Route path={appRoutes.home} element={<Home />} />
         <Route path={appRoutes.about} element={<About />} />

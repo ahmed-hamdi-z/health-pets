@@ -17,12 +17,11 @@ const Home = () => {
       <ServicesSection />
       <Reels />
       <OurProjects />
-
       <>
         <PetShowcase
           title="Explore all"
           subtitle="about your pet"
-          description="The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps..."
+          description="Pamper your pet with safe and premium products, because they deserve the best. Discover the perfect combination of vitamins, minerals, and nutrients to nourish your furry companion and keep them healthy and happy."
           products={[
             { id: 1, image: "/images/cat.jpg" },
             { id: 2, image: "/images/cat.jpg" },
@@ -34,7 +33,6 @@ const Home = () => {
           petImage="/images/cat-shop.png"
         />
       </>
-
       <StaggerTestimonials />
     </PageContainer>
   );

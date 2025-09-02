@@ -7,37 +7,37 @@ const doctors = [
   {
     name: "Dr. Sara",
     description:
-      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs, as well as providing vaccination programs and preventive care for domestic animals.",
+      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs.",
     image: "/images/advice.png",
   },
   {
     name: "Dr. Sara",
     description:
-      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs, as well as providing vaccination programs and preventive care for domestic animals.",
+      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs.",
     image: "/images/advice.png",
   },
   {
     name: "Dr. Sara",
     description:
-      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs, as well as providing vaccination programs and preventive care for domestic animals.",
+      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs.",
     image: "/images/advice.png",
   },
   {
     name: "Dr. Sara",
     description:
-      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs, as well as providing vaccination programs and preventive care for domestic animals.",
+      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs.",
     image: "/images/advice.png",
   },
   {
     name: "Dr. Sara",
     description:
-      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs, as well as providing vaccination programs and preventive care for domestic animals.",
+      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs.",
     image: "/images/advice.png",
   },
   {
     name: "Dr. Sara",
     description:
-      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs, as well as providing vaccination programs and preventive care for domestic animals.",
+      "specializing in the diseases and nutrition of pets, with expertise in diagnosing and treating digestive and skin problems in cats and dogs.",
     image: "/images/advice.png",
   },
 ];

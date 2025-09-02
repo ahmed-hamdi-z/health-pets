@@ -5,7 +5,7 @@ import Logo from "../Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-cyan-300 to-cyan-200 pt-10 pb-6 md:rounded-t-[150px] rounded-t-4xl">
+    <footer className="bg-[#99D8E0]/70 pt-10 pb-6 md:rounded-t-[150px] rounded-t-4xl">
       <div className="max-w-[250px] mx-auto bg-white rounded-full -mt-24">
         <Logo className="mx-auto mb-5 px-5 py-2" />
       </div>
@@ -59,6 +59,11 @@ const Footer = () => {
                 Blogs
               </a>
             </li>
+               <li>
+              <a href="/blogs" className="hover:text-cyan-700">
+                Products
+              </a>
+            </li>
             <li>
               <a href="/contact" className="hover:text-cyan-700">
                 Contact Us
@@ -80,7 +85,7 @@ const Footer = () => {
           <form className="flex flex-col items-start gap-3">
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Phone or Email"
               className="w-full rounded-lg px-3 py-2 border-none focus:outline-none focus:ring-2 focus:ring-cyan-400 bg-white"
             />
             <textarea
@@ -90,7 +95,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-orange-500 text-white rounded-lg px-7 py-1.5 hover:bg-orange-600 transition"
+              className="bg-gradient-to-tl from-[#F79437] to-white text-[#4C4C4C] rounded-lg px-7 py-1.5 hover:bg-orange-600 transition cursor-pointer"
             >
               Send
             </button>

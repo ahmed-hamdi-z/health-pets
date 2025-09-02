@@ -11,7 +11,7 @@ const FloatingButtons = () => {
   const btnsArr = [
     {
       icon: <FaPhoneAlt className="md:w-7 md:h-7 w-6 h-6" />,
-      color: "bg-blue-500",
+      color: "bg-[#99D8E0]",
       hoverColor: "hover:bg-blue-700",
       href: `tel:${info.phone}`,
     },

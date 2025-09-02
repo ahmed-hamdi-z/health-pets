@@ -6,7 +6,7 @@ const AboutInfo = () => {
   return (
     <SectionContainer className="section-bg ">
       <div
-        className={`flex flex-col items-center text-center text-black w-full h-auto bg-gradient-to-r from-[#E4A353] to-[#E09341] mix-blend-multiply ${
+        className={`flex flex-col items-center text-center text-black w-full h-auto bg-gradient-to-r from-[#F9EFA7] to-[#F9EFA7] mix-blend-multiply ${
           isDesktop ? "mask-hero-top" : ""
         }`}
       >

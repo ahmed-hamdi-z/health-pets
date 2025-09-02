@@ -9,14 +9,13 @@ const ExperienceSection = () => {
       ref={targetRef}
       id="#section-container"
       wraperClassName="items-center justify-center "
-      className={`section-bg ease-in-out duration-1000 ${
-        isInView ? "opacity-100" : "opacity-0"
-      }`}
+      className={`section-bg ease-in-out duration-1000 ${isInView ? "opacity-100" : "opacity-0"
+        }`}
     >
       <div className="flex flex-col md:flex-row">
         {/* Left Card */}
         <div className="flex flex-col items-center justify-center w-full md:w-1/3 md:translate-x-1/4 md:-translate-y-5 translate-y-5">
-          <div className="leading-tight md:translate-y-1/4">
+          <div className="leading-tight ">
             <div className=" gap-2 -mb-5 ">
               <span className="block text-gray-700 text-4xl font-medium translate-y-28">
                 More

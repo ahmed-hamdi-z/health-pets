@@ -10,7 +10,7 @@ const ContactUs = () => {
   return (
     <SectionContainer
       id="contactUs"
-      wraperClassName="items-center md:max-w-7xl max-w-none mx-auto bg-[#96D7E0] my-20 rounded-4xl"
+      wraperClassName="items-center md:max-w-7xl max-w-none mx-auto bg-[#99D8E0]/80 my-20 rounded-4xl"
     >
       <div
         ref={targetRef}

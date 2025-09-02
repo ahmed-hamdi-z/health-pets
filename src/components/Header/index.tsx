@@ -22,7 +22,7 @@ const Header = () => {
         duration-300
         box-border
         z-50
-        ${isTop ? "bg-[#99D8E0]/40" : "bg-[#99D8E0]/60"}
+        ${isTop ? "bg-[#99D8E0]/70" : "bg-[#99D8E0]/90"}
         ${scrollDir === "down" ? "-translate-y-full" : "translate-y-0"}
         ${isTop ? "shadow-none" : "shadow-headerShadow"}`)}
     >

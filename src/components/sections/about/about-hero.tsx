@@ -3,8 +3,14 @@ import useScrollInToView from "../../../hooks/useScrollInToView";
 import SectionContainer from "../../containers/SectionContainer";
 import { trim } from "../../../utils/general";
 
-const AboutHero = () => {
-  const { t, i18n } = useTranslation(["home", "common"]);
+// Define the type for the component's props, now including imageUrl
+type AboutHeroProps = {
+  title: string;
+  imageUrl: string;
+};
+
+const AboutHero = ({ title, imageUrl }: AboutHeroProps) => {
+  const { i18n } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
 
   return (
@@ -12,49 +18,44 @@ const AboutHero = () => {
       ref={targetRef}
       className={`
         section-bg
-        bg-[url('/images/about-hero-vector.svg')]
+        bg-[#99D8E0]/70
         md:max-w-[75%]
         ml-auto
-        bg-center
         rounded-bl-full
-        bg-no-repeat
         h-screen
         pt-20
-        `}
+      `}
       wraperClassName={`
-        md:translate-x-1/4
-        bg-[url('/images/about-hero-img.png')]
-        bg-contain
-        bg-center
-        bg-no-repeat
         h-screen
-        ${i18n.language === "en" ? "md:items-end" : ""}`}
+        ${i18n.language === "en" ? "md:items-end" : ""}
+        `}
     >
       <div
         className={trim(`
           flex 
-          flex-col 
+          flex-row 
           items-center 
           justify-center
-          md:gap-4 
+          md:gap-24
           text-center 
           h-full`)}
       >
         <h1
           className={trim(`
-            text-5xl
-            text-white
+            md:text-6xl
+            text-4xl
+            text-black
             font-semibold
             text-primary
-            transition-[transform, opacity]
+            transition-[transform,opacity]
             duration-500
             ease-in-out
             ${isInView ? "opacity-100" : "opacity-0"}
-            ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
+            `)}
         >
-          {t("About Us")}
+          {title}
         </h1>
-
+        <img className="md:w-[35%] w-[50%] md:translate-y-0 translate-y-1/3" src={imageUrl} alt="" />
       </div>
     </SectionContainer>
   );

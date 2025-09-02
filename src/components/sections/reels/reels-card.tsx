@@ -17,7 +17,7 @@ const ReelsCard: React.FC<ReelsSectionProps> = ({ reels }) => {
     <SectionContainer
       ref={targetRef}
       id="#section-container"
-      wraperClassName="items-center justify-center bg-gradient-to-b from-blue-100 to-blue-50 py-10"
+      wraperClassName="items-center justify-center bg-[#99D8E0]/70 py-10"
       className={` ease-in-out duration-1000 ${
         isInView ? "opacity-100" : "opacity-0"
       }`}
@@ -30,7 +30,7 @@ const ReelsCard: React.FC<ReelsSectionProps> = ({ reels }) => {
               href={reel.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative group rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-105"
+              className="relative group rounded-2xl overflow-hidden shadow-md transition-transform hover:scale-105 "
             >
               {/* reel Image */}
               <img

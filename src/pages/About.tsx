@@ -3,11 +3,12 @@ import AboutUsSection from "../components/sections/about";
 import AboutHero from "../components/sections/about/about-hero";
 import AboutInfo from "../components/sections/about/about-info";
 import DoctorsSection from "../components/sections/doctors";
+import img from "/images/about-hero-img.png";
 
 export const About = () => {
   return (
     <PageContainer>
-      <AboutHero />
+      <AboutHero imageUrl={img} title="About us" />
       <AboutInfo />
       <AboutUsSection />
       <DoctorsSection />

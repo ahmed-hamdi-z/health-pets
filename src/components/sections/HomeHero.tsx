@@ -16,8 +16,7 @@ const HomeHero = () => {
       className={`
         bg-[url('/images/cat.jpg')]
         bg-cover
-        bg-no-repeat
-        md:bg-top 
+        bg-no-repeat 
         bg-center
         h-screen
         justify-center`}
@@ -71,12 +70,12 @@ const HomeHero = () => {
 
           <h3
             className={trim(`
-              text-responsive-subCover 
-              text-4xl
-              font-bold text-white`)}
+            text-xl
+            md:text-5xl
+            font-bold text-black`)}
           >
-            {/* {t("coName", { ns: "common" })} */} Healthy pets... Happy
-            Gets...
+            {/* {t("coName", { ns: "common" })} */} Healthy pets...Happy
+            gets...
           </h3>
         </div>{" "}
         <button
@@ -84,7 +83,6 @@ const HomeHero = () => {
             mb-2
             px-9
             z-50
-            mr-2
             py-2
             rounded-2xl
             text-white
@@ -98,10 +96,10 @@ const HomeHero = () => {
             shadow-md
             shadow-[#48BACC]/50
             ${isInView ? "opacity-100" : "opacity-0"}`)}
-          title={t("contactUs", { ns: "common" })}
+          title={t("Contact Us", { ns: "common" })}
           onClick={() => push(appRoutes.contact)}
         >
-          {t("contactUs", { ns: "common" })}
+          {t("Contact Us", { ns: "common" })}
         </button>
       </div>
     </SectionContainer>

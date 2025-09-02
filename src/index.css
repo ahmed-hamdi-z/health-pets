@@ -46,5 +46,5 @@
 
 .responsive-subCover {
   font-size: clamp(1.7rem, 3vw, 3rem);
-  @apply flex items-center justify-center bg-gradient-to-b from-blue-100 to-blue-50 px-14 rounded-2xl my-5; 
+  @apply flex items-center justify-center bg-gradient-to-b from-[#99D8E0] to-[#99D8E0]/10 px-14 rounded-2xl my-5; 
 }

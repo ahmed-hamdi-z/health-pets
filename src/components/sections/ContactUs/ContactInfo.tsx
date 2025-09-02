@@ -19,17 +19,11 @@ const ContactInfo = () => {
         gap-7
         rounded-3xl`)}
     >
-      <div className="flex flex-col gap-4">
-        <h3 className="text-4xl font-semibold text-white">
-          {/* {t("info.title")} */}  Healthy pets... Happy
-            Gets...
-        </h3>
-        {/* <p className="text-responsive-sm text-gray-100">
-          {t("info.description")} 
-        </p> */}
-      </div>
+      <h3 className="md:text-4xl text-[16px] font-bold inline-block">
+        {/* {t("info.title")} */}  Healthy pets...Happy gets...
+      </h3>
 
-<img className="w-full h-full" src="/images/contact.png" alt="" />
+      <img className="w-full h-full" src="/images/contact.png" alt="" />
 
     </div>
   );

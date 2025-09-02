@@ -75,7 +75,7 @@ export const StaggerTestimonials = () => {
     <div className="flex flex-col items-center">
     <SectionHeader className="" title="Testimonials" />
     <div
-      className="relative w-full overflow-hidden bg-[#99D8E0] mb-20"
+      className="relative w-full overflow-hidden  mb-20"
       style={{
         height: SECTION_HEIGHT,
       }}
@@ -102,13 +102,13 @@ export const StaggerTestimonials = () => {
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
         <button
           onClick={() => handleMove(-1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
+          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
         >
           <GoArrowLeft />
         </button>
         <button
           onClick={() => handleMove(1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
+          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
         >
           <GoArrowRight />
         </button>
@@ -140,7 +140,7 @@ const TestimonialCard = ({
       onClick={() => handleMove(position)}
       className={`
       absolute left-1/2 top-1/2 cursor-pointer p-8 transition-colors duration-500 ${
-        isActive ? "z-10 bg-[#99D8E0]" : "z-0 bg-white"
+        isActive ? "z-10 bg-[#99D8E0] rounded-2xl" : "z-0 bg-white"
       }
       `}
       animate={{

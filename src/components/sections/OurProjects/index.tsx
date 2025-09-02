@@ -29,7 +29,7 @@ const OurProjects = () => {
   return (
     <SectionContainer>
       <div className="flex flex-col items-center justify-center mx-auto">
-        <SectionHeader title="Projects" />
+        <SectionHeader title="Gallary" />
         <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-5 ">
           {images.map((image, i) => (
             <ProjectCard image={image} key={i} setOpen={setOpen} />
