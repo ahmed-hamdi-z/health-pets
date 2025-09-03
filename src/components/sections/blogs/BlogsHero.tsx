@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import blogOneImg from "/images/cat.jpg";
-
 // import blogOneImg from "../../assets/imgs/blog-one.png";
 // import blogTwoImg from "../../assets/imgs/blog-two.png";
 // import blogThreeImg from "../../assets/imgs/blog-three.png";

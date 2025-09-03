@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import SectionHeader from "../../SectionHeader";
@@ -73,47 +73,47 @@ export const StaggerTestimonials = () => {
 
   return (
     <div className="flex flex-col items-center">
-    <SectionHeader className="" title="Testimonials" />
-    <div
-      className="relative w-full overflow-hidden  mb-20"
-      style={{
-        height: SECTION_HEIGHT,
-      }}
-    >
-      {testimonials.map((t, idx) => {
-        let position = 0;
+      <SectionHeader className="" title="Testimonials" />
+      <div
+        className="relative w-full overflow-hidden  mb-20"
+        style={{
+          height: SECTION_HEIGHT,
+        }}
+      >
+        {testimonials.map((t, idx) => {
+          let position = 0;
 
-        if (testimonials.length % 2) {
-          position = idx - (testimonials.length + 1) / 2;
-        } else {
-          position = idx - testimonials.length / 2;
-        }
+          if (testimonials.length % 2) {
+            position = idx - (testimonials.length + 1) / 2;
+          } else {
+            position = idx - testimonials.length / 2;
+          }
 
-        return (
-          <TestimonialCard
-            key={t.tempId}
-            testimonial={t}
-            handleMove={handleMove}
-            position={position}
-            cardSize={cardSize}
-          />
-        );
-      })}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
-        <button
-          onClick={() => handleMove(-1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
-        >
-          <GoArrowLeft />
-        </button>
-        <button
-          onClick={() => handleMove(1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
-        >
-          <GoArrowRight />
-        </button>
+          return (
+            <TestimonialCard
+              key={t.tempId}
+              testimonial={t}
+              handleMove={handleMove}
+              position={position}
+              cardSize={cardSize}
+            />
+          );
+        })}
+        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
+          <button
+            onClick={() => handleMove(-1)}
+            className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
+          >
+            <GoArrowLeft />
+          </button>
+          <button
+            onClick={() => handleMove(1)}
+            className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
+          >
+            <GoArrowRight />
+          </button>
+        </div>
       </div>
-    </div>
     </div>
 
   );
@@ -139,17 +139,15 @@ const TestimonialCard = ({
       initial={false}
       onClick={() => handleMove(position)}
       className={`
-      absolute left-1/2 top-1/2 cursor-pointer p-8 transition-colors duration-500 ${
-        isActive ? "z-10 bg-[#99D8E0] rounded-2xl" : "z-0 bg-white"
-      }
+      absolute left-1/2 top-1/2 cursor-pointer p-8 transition-colors duration-500 ${isActive ? "z-10 bg-[#99D8E0] rounded-2xl" : "z-0 bg-white"
+        }
       `}
       animate={{
         width: cardSize,
         height: cardSize,
         x: `calc(-50% + ${position * (cardSize / 1.5)}px)`,
-        y: `calc(-50% + ${
-          isActive ? CENTER_STAGGER : position % 2 ? STAGGER : -STAGGER
-        }px)`,
+        y: `calc(-50% + ${isActive ? CENTER_STAGGER : position % 2 ? STAGGER : -STAGGER
+          }px)`,
         rotate: isActive ? 0 : position % 2 ? ROTATE_DEG : -ROTATE_DEG,
         boxShadow: isActive ? "0px 8px 0px 4px white" : "0px 0px 0px 0px white",
       }}
@@ -172,22 +170,20 @@ const TestimonialCard = ({
       <img
         src={testimonial.imgSrc}
         alt={`Testimonial image for ${testimonial.by}`}
-        className="mb-4 h-14 w-12 bg-neutral-600 object-cover object-top"
+        className="mb-4 md:h-16 h-10 md:w-32 w-20 px-1 bg-white object-contain rounded-3xl"
         style={{
           boxShadow: "3px 3px 0px white",
         }}
       />
       <h3
-        className={`text-base sm:text-xl ${
-          isActive ? "text-white" : ""
-        }`}
+        className={`text-base sm:text-xl ${isActive ? "text-white" : "text-neutral-700"
+          }`}
       >
         "{testimonial.testimonial}"
       </h3>
       <p
-        className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
-          isActive ? "text-indigo-200" : "text-neutral-700"
-        }`}
+        className={`absolute bottom-4 text-right left-8 right-8 mt-2 text-sm italic ${isActive ? "text-white" : "text-neutral-700"
+          }`}
       >
         - {testimonial.by}
       </p>
@@ -206,82 +202,82 @@ const TESTIMONIAL_DATA: TestimonialType[] = [
   {
     tempId: 0,
     testimonial:
-      "My favorite solution in the market. We work 5x faster with COMPANY.",
-    by: "Alex, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/1.jpg",
+      "عيادة بيطريه وتحميم الكلاب .. رحت لهم احمم كلابتي مره مهتمين بالألبف العيادة جداً نظيفة و الاستقبال يجنن الموظفين مره محترمين وتعاملهم راقي",
+    by: "Nora",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 1,
     testimonial:
-      "I'm confident my data is safe with COMPANY. I can't say that about other providers.",
-    by: "Dan, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/2.jpg",
+      "تجربتي كانت من أفضل التجارب مع قطّي، من ناحية التعامل والاهتمام, كل شيء كان بيرفكت بصراحة، حتى الموظفين اللي قابلتهم كانوا في قمة الذوق والاحترافية. وإن شاء الله مو آخر زيارة",
+    by: "REEM ALRUWAYSHID",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 2,
     testimonial:
-      "I know it's cliche, but we were lost before we found COMPANY. Can't thank you guys enough!",
-    by: "Stephanie, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/3.jpg",
+      "The clinic is excellent. I brought them a dog that had eaten chocolate. They interacted with me and cared about the issue. They were very careful to ensure that she received full care.",
+    by: "Dhuha AlMutaz",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 3,
     testimonial:
-      "COMPANY's products make planning for the future seamless. Can't recommend them enough!",
-    by: "Marie, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/4.jpg",
+      "I took my cat today to this clinic for general checkup. Dr Walaa was so sweet when handling my cat. She gave us clear guidelines on taking care of him.",
+    by: "abeer alissa",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 4,
-    testimonial: "If I could give 11 stars, I'd give 12.",
-    by: "Andre, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/5.jpg",
+    testimonial: "اجمل عياده ازورها بالرياض  نظافه وترتيب ورفق بالأليف  افضل شيء بالعياده الريسبشن البتول بشوشه و متعاونه يعطيها العافيه 🌼🌼 …",
+    by: "N strong",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 5,
     testimonial:
-      "SO SO SO HAPPY WE FOUND YOU GUYS!!!! I'd bet you've saved me 100 hours so far.",
-    by: "Jeremy, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/6.jpg",
+      "My cat had a fight with some neighbor cats and I brought her for a check up. The staff was extremely friendly and professional.",
+    by: "Abdullah Alshaikh",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 6,
     testimonial:
-      "Took some convincing, but now that we're on COMPANY, we're never going back.",
-    by: "Pam, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/7.jpg",
+      "كل شي جميل صرااااحه و تعامل البتول اللي في الرسبشن راااائع 🤍🤍🤍🤍 …",
+    by: "Sarah Alshehri",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 7,
     testimonial:
-      "I would be lost without COMPANY's in depth analytics. The ROI is EASILY 100X for us.",
-    by: "Daniel, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/8.jpg",
+      "تعامل ممتاز واحترافي 👍👍شكرا لكم …",
+    by: "N N",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 8,
-    testimonial: "It's just the best. Period.",
-    by: "Fernando, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/9.jpg",
+    testimonial: "My cat had a fight with some neighbor cats and I brought her for a check up. The staff was extremely friendly and professional.",
+    by: "Abdullah Alshaikh",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 9,
-    testimonial: "I switched 5 years ago and never looked back.",
-    by: "Andy, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/10.jpg",
+    testimonial: "خدمه ممتازه و سريعه",
+    by: "faisal almazrou",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 10,
     testimonial:
-      "I've been searching for a solution like COMPANY for YEARS. So glad I finally found one!",
-    by: "Pete, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/11.jpg",
+      "مكان نظيف و احترافيين ومتعاونين 👍🏻 …",
+    by: "Mishary Al Akeel",
+    imgSrc: "/images/logo.png",
   },
   {
     tempId: 11,
     testimonial:
-      "It's so simple and intuitive, we got the team up to speed in 10 minutes.",
-    by: "Marina, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/12.jpg",
+      "العيادة ممتازة وديت لهم كلبة ماكله شوكلاته وكانوا جدا رحومين وحريصين تاخذ العناية الكاملة الدكتورة الله يسعدها والطاقم كلهم👍🏻 …",
+    by: "Bsma Farhan",
+    imgSrc: "/images/logo.png",
   },
 ];

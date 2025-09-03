@@ -48,9 +48,6 @@ const Form = () => {
   const onSubmitHandler: SubmitHandler<Contact> = async (data) => {
     try {
       setIsLoading(() => true);
-
-      // const res = await createContact(data);
-
       const template = {
         from_name: data.name,
         from_email: data.email,
@@ -93,10 +90,9 @@ const Form = () => {
       onSubmit={handleSubmit(onSubmitHandler)}
     >
       <InputStyled
-        contianerClassName="w-full bg-white rounded-2xl"   // ✅ added rounded
-        className={`  ${
-          errors.name?.message ? "placeholder:text-red-500" : ""
-        }`}
+        contianerClassName="w-full bg-white rounded-2xl"
+        className={`  ${errors.name?.message ? "placeholder:text-red-500" : ""
+          }`}
         placeholder={t("form.name.placeholder")}
         {...register("name", {
           required: {
@@ -117,7 +113,7 @@ const Form = () => {
       />
 
       <InputStyled
-        contianerClassName="w-full bg-white rounded-2xl" 
+        contianerClassName="w-full bg-white rounded-2xl"
         id="phone"
         type="tel"
         placeholder={t("form.subject.placeholder")}
@@ -160,10 +156,9 @@ const Form = () => {
       />
 
       <InputStyled
-        contianerClassName="w-full bg-white rounded-2xl" 
-        className={`${
-          errors.email?.message ? "placeholder:text-red-500" : ""
-        }`}
+        contianerClassName="w-full bg-white rounded-2xl"
+        className={`${errors.email?.message ? "placeholder:text-red-500" : ""
+          }`}
         placeholder={t("form.email.placeholder")}
         {...register("email", {
           required: {
@@ -180,10 +175,9 @@ const Form = () => {
       />
 
       <InputStyled
-        contianerClassName="w-full bg-white rounded-2xl" 
-        className={`${
-          errors.message?.message ? "placeholder:text-red-500" : ""
-        }`}
+        contianerClassName="w-full bg-white rounded-2xl"
+        className={`${errors.message?.message ? "placeholder:text-red-500" : ""
+          }`}
         elemType="textarea"
         placeholder={t("form.message.placeholder")}
         {...register("message", {
@@ -206,10 +200,11 @@ const Form = () => {
 
       <ButtonStyled
         type="submit"
-        bg
-        warning
         hover
-        className="md:self-start"
+        style={{
+          color: "black",
+        }}
+        className="md:self-start bg-[#F9EFA7] rounded-2xl "
         ripple
         title={t("submit", { ns: "common" })}
         disabled={isLoading}

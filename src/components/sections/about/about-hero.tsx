@@ -3,7 +3,6 @@ import useScrollInToView from "../../../hooks/useScrollInToView";
 import SectionContainer from "../../containers/SectionContainer";
 import { trim } from "../../../utils/general";
 
-// Define the type for the component's props, now including imageUrl
 type AboutHeroProps = {
   title: string;
   imageUrl: string;
