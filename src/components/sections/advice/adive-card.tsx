@@ -1,7 +1,7 @@
 
 const AdviceCard = ({ title }: { title: string }) => {
     return (
-        <div className="relative z-10 flex flex-col items-center justify-center md:w-96 w-[90%] ml-auto">
+        <div className="relative z-10 flex flex-col items-center justify-center md:w-96 w-[90%] ml-auto ">
             <img src="/images/advice-vector.png" alt="" />
             <div className="absolute p-5">
                 <img

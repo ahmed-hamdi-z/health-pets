@@ -7,7 +7,7 @@ export type Contact = {
 };
 
 type ContactTypes = {
-  label: string;
+  label?: string;
   value: string;
 }[];
 

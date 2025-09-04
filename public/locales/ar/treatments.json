@@ -1,0 +1,84 @@
+{
+  "title": "",
+  "description": "",
+
+  "ourTreatments": {
+    "title": "",
+    "items": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "",
+        "steps": [
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "",
+        "steps": [
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "",
+        "steps": [
+          {
+            "title": "",
+            "description": ""
+          },
+          {
+            "title": "",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  "whyOurTreatment": {
+    "title": "",
+    "items": {
+      "itemOne": "",
+      "itemTwo": "",
+      "itemThree": "",
+      "itemFour": ""
+    }
+  }
+}

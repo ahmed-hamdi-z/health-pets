@@ -1,4 +1,4 @@
-import { type SetStateAction, type Dispatch, createContext } from "react";
+import {createContext, type SetStateAction, type Dispatch } from "react";
 
 const DrawerContext = createContext({
   openDrawer: false,

@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { useResponsiveDesign } from "../../../hooks/useMediaQuery";
 import SectionContainer from "../../containers/SectionContainer";
 
 const AboutInfo = () => {
   const { isDesktop } = useResponsiveDesign();
+    const { t } = useTranslation("about");
   return (
     <SectionContainer className="section-bg ">
       <div
@@ -10,12 +12,9 @@ const AboutInfo = () => {
           isDesktop ? "mask-hero-top" : ""
         }`}
       >
-        <h1 className="text-5xl font-bold py-2">Health Pets</h1>
+        <h1 className="text-5xl font-bold py-2">{t("title")}</h1>
         <p className="max-w-3xl text-center leading-relaxed py-2 fount-semibold ">
-          Located in the heart of Riyadh, our premium veterinary clinic offers a
-          unique experience that combines advanced medical technology with the
-          expertise of a compassionate team. We go beyond treatment, focusing on
-          every detail to ensure your pet’s health and happiness.
+          {t("description")}
         </p>
 
         <div className="bg-[url('/images/about-info.png')] md:w-2xl w-sm h-42 bg-contain bg-no-repeat bg-bottom md:translate-y-4.5 translate-y-3.5" />

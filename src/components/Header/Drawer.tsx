@@ -1,13 +1,16 @@
 import { useCallback, useContext, type JSX } from "react";
-import DrawerContext from "../context/drawer.context";
 import useDelay from "../../hooks/useDelay";
 import useRemoveScroll from "../../hooks/useRemoveScroll";
+
+import { MdKeyboardArrowRight } from "react-icons/md";
+import DrawerContext from "../context/drawer.context";
 import { trim } from "../../utils/general";
+import ButtonStyled from "../ButtonStyled";
 
 const tailWindClasses = {
   aside: {
     width: "w-2/3",
-    bg: "bg-white",
+    bg: "bg-black",
     darkBg: null,
   },
   backDrop: {
@@ -76,24 +79,23 @@ const Drawer = ({
           ${aside.bg || ""}
           ${aside.darkBg || ""}
           ${lang === "ar" ? "right-full" : "right-0"}
-          ${
-            lang === "ar"
-              ? showComponent
-                ? "translate-x-full"
-                : "-translate-x-0"
-              : showComponent
+          ${lang === "ar"
+            ? showComponent
+              ? "translate-x-full"
+              : "-translate-x-0"
+            : showComponent
               ? "translate-x-0"
               : "translate-x-full"
           }`)}
       >
-        <button
-          className={trim(`
-            !text-primary 
+        <ButtonStyled
+          className={trim(` 
             self-start 
             ${lang === "ar" ? "-scale-x-100" : ""}`)}
+          size="xs"
           onClick={handleClose}
-        > 
-        </button>
+          SvgIcon={<MdKeyboardArrowRight size={35} />}
+        />
 
         <ul
           className={trim(`
@@ -108,18 +110,18 @@ const Drawer = ({
         >
           {navArr.map(({ name, link }, i) => (
             <li key={i}>
-              <button
+              <ButtonStyled
                 onClick={() => onNavHandler(link)}
                 className={trim(`
-                  !text-primary
+                  text-black
                   hover:!text-secondary
                   font-medium
-                  ${
-                    activePath === link
-                      ? `underline underline-offset-4
+                  ${activePath === link
+                    ? `underline underline-offset-4
                        decoration-secondary decoration-4`
-                      : ""
+                    : ""
                   }`)}
+                size="md"
                 title={name}
               />
             </li>

@@ -1,0 +1,85 @@
+{
+  "title": "خدمتنا",
+  "description": "",
+
+  "ourConcepts": {
+    "General": {
+      "title": "General Veterinary Check-up",
+      "description": "Comprehensive health examinations to ensure your pet’s overall well-being and detect any issues early, promoting a healthier and longer life."
+    },
+
+    "Vaccinations": {
+      "title": "Vaccinations & Preventive Care",
+      "description": "Routine vaccinations and preventive treatments to protect your pet from infectious diseases and maintain long-term health."
+    },
+
+     "Surgeries": {
+      "title": "All Pet Surgeries, Spay & Neuter",
+      "description": "Professional surgical procedures including spaying, neutering, and all types of pet surgeries performed with advanced medical techniques."
+    },
+     "Dental-care": {
+      "title": "🦷Dental Care & Surgeries",
+      "description": "Specialized dental cleaning, treatment of gum and tooth problems, and surgical interventions to keep your pet’s smile healthy."
+    },
+     "Grooming": {
+      "title": "Pet Grooming ✂️ Haircuts, Styling & Bathing Services",
+      "description": "Full grooming services including haircuts, styling, and safe bathing with premium pet-friendly products."
+    },
+     "Laboratory": {
+      "title": "Laboratory Tests & Diagnostics 🔬",
+      "description": "Accurate blood, urine, and stool tests to diagnose conditions quickly and provide the best treatment plan."
+    },
+     "X-Ray": {
+      "title": "Ultrasound & X-Ray Imaging",
+      "description": "Advanced ultrasound and X-ray technology for precise internal examinations and accurate diagnoses."
+    },
+     "Isolation": {
+      "title": "Isolation & Quarantine for Sick Animals",
+      "description": "Safe, sterilized quarantine spaces for sick pets to ensure their recovery while preventing the spread of infections."
+    },
+     "Pharmacy": {
+      "title": "Pet Pharmacy & Medications",
+      "description": "A full range of certified veterinary medications and treatments for all health conditions."
+    },
+     "Luxury": {
+      "title": "Luxury Boarding & Daycare Services",
+      "description": "Premium boarding and daycare services with continuous care, feeding, and play in a safe and comfortable environment."
+    },
+     "Microchips": {
+      "title": "Pet Microchips & Identification",
+      "description": "Electronic microchip implantation to provide secure identification and protection in case your pet gets lost."
+    },
+     "Emergency": {
+      "title": "Emergency & Critical Care",
+      "description": "24/7 emergency services to handle urgent and critical cases, ensuring fast and professional care."
+    },
+     "International": {
+      "title": "International Pet Travel Services",
+      "description": "Complete support for international pet travel including vaccinations, tests, and required certifications."
+    },
+     "Nutrition": {
+      "title": "Nutrition & Diet Consultation",
+      "description": "Customized nutrition plans tailored to your pet’s breed, lifestyle, and health needs for optimal growth and wellness."
+    },
+     "Passport": {
+      "title": "Passport & Health Certificate Issuing",
+      "description": "Official pet passports and health certificates for safe and compliant international travel."
+    },
+     "Pickup": {
+      "title": "Pickup & Drop-off Service",
+      "description": "Official pet passports and health certificates for safe and compliant international travel."
+    },
+     "Session": {
+      "title": "Free Photo Session",
+      "description": "Professional photo sessions to capture your pet’s most precious and joyful moments."
+    },
+     "Pet-Shop": {
+      "title": "Pet Shop – All Pet Supplies & Accessories",
+      "description": "Wide range of toys, food, accessories, and innovative products to make your pet’s life healthier and happier."
+    },
+     "Kennels": {
+      "title": "Kennels, Litter Boxes, Sand, Toys, Scratchers, Clothes & More",
+      "description": "Everything your pet needs in one place, from housing and hygiene products to toys and clothing."
+    }
+  }
+}

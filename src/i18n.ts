@@ -26,6 +26,7 @@ i18n
     },
     ns: [
       "about",
+      "services",
       "articles",
       "blogs",
       "common",

@@ -1,0 +1,146 @@
+{
+  "article1": {
+    "title": "",
+    "description": "",
+    "content": {
+      "title1": "",
+      "descriptionTitle1": "",
+      "title2": "",
+      "itemsTitle2": [
+        {
+          "title": "",
+          "steps": [""]
+        }
+      ],
+      "title3": "",
+      "itemsTitle3": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    "footer": ""
+  },
+
+  "article2": {
+    "title": "",
+    "description": "",
+    "content": {
+      "title1": "",
+      "itemsTitle1": [
+        {
+          "title": "",
+          "steps": [""]
+        }
+      ],
+      "title2": "",
+      "itemsTitle2": [
+        {
+          "title": "",
+          "steps": [""]
+        }
+      ],
+      "title3": "",
+      "itemsTitle3": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ],
+      "title4": "",
+      "itemsTitle4": [""]
+    },
+    "footer": ""
+  },
+
+  "article3": {
+    "title": "",
+    "description": "",
+    "content": {
+      "title1": "",
+      "descriptionTitle1": "",
+      "title2": "",
+      "descriptionTitle2": "",
+      "title3": "",
+      "descriptionTitle3": "",
+      "title4": "",
+      "itemsTitle4": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    "footer": ""
+  },
+
+  "article4": {
+    "title": "",
+    "description": "",
+    "info": "",
+    "content": {
+      "title1": "",
+      "itemsTitle1": [
+        {
+          "title": "",
+          "steps": [""]
+        }
+      ],
+      "title2": "",
+      "itemsTitle2": [
+        {
+          "title": "",
+          "steps": [
+            {
+              "title": "",
+              "subSteps": [""]
+            }
+          ]
+        }
+      ],
+      "title3": "",
+      "itemsTitle3": [
+        {
+          "title": "",
+          "steps": [
+            {
+              "title": "",
+              "description": ""
+            }
+          ]
+        }
+      ],
+      "title4": "",
+      "descriptionTitle4": "",
+      "itemsTitle4": [""]
+    },
+    "footer": "",
+    "info2": ""
+  },
+
+  "article5": {
+    "title": "",
+    "description": "",
+    "content": {
+      "title1": "",
+      "itemsTitle1": [
+        {
+          "title": "",
+          "steps": [""]
+        }
+      ],
+      "title2": "",
+      "itemsTitle2": [
+        {
+          "title": "",
+          "steps": [""]
+        }
+      ],
+      "title3": "",
+      "itemsTitle3": [""]
+    },
+    "footer": "",
+    "info2": ""
+  }
+}

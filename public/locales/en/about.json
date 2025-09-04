@@ -1,0 +1,19 @@
+{
+  "title": "Health Pets",
+  "description": "Located in the heart of Riyadh, our premium veterinary clinic offers a unique experience that combines advanced medical technology with the expertise of a compassionate team. We go beyond treatment, focusing on every detail to ensure your pet’s health and happiness.",
+
+  "ourConcepts": {
+    "mission": {
+      "title": "Mission",
+      "description": "Our mission at Healthy Pets is to deliver exceptional veterinary care and preventive services for pets and their families in Riyadh. using advanced technology and modern treatments."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To be Riyadh's premier pet healthcare destination, offering state-of-the-artmedical services in a luxurious,nurturing environment"
+    },
+    "core-values": {
+      "title": "Core Values",
+      "description": "Compassion: Treating pets as family. Excellence: Providing top-quality veterinary care Trust: Transparency and reliability. Innovation: Cutting-edge treatments"
+    }
+  }
+}

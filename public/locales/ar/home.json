@@ -1,0 +1,76 @@
+{
+  "title": "",
+  "hero": {
+    "title": "",
+    "subtitle": ""
+  },
+  "welcome": {
+    "title": "",
+    "description": ""
+  },
+  "ourServices": {
+    "title": "",
+    "description": "",
+    "items": {
+      "descriptionOne": "",
+      "descriptionTwo": "",
+      "descriptionThree": "",
+      "descriptionFour": ""
+    }
+  },
+  "whyChooseUs": {
+    "title": "",
+    "items": {
+      "descriptionOne": "",
+      "descriptionTwo": "",
+      "descriptionThree": ""
+    }
+  },
+  "achievements": {
+    "title": "",
+    "items": [
+      {
+        "number": "",
+        "title": ""
+      },
+      {
+        "number": "",
+        "title": ""
+      },
+      {
+        "number": "",
+        "title": ""
+      },
+      {
+        "number": "",
+        "title": ""
+      }
+    ]
+  },
+  "ourProjects": {
+    "title": ""
+  },
+  "ourSuppliers": {
+    "title": ""
+  },
+  "ourClients": {
+    "title": ""
+  },
+  "testimonials": {
+    "title": "",
+    "items": {
+      "cardOne": {
+        "name": "",
+        "feedback": ""
+      },
+      "cardTwo": {
+        "name": "",
+        "feedback": ""
+      },
+      "cardThree": {
+        "name": "",
+        "feedback": ""
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ const BREAKPOINTS = {
   lg: 1024,
 };
 
-const arousel = () => {
+const Carousel = () => {
   const [ref, { width }] = useMeasure();
   const [offset, setOffset] = useState(0);
 
@@ -41,8 +41,7 @@ const arousel = () => {
   return (
     <section className="w-full " ref={ref}>
       <div className=" overflow-hidden p-4">
-        <div className="  ">
-          <div className="  flex items-center gap-2 z-10">
+          <div className=" flex items-center gap-2 z-10">
             <button
               className={`z-10 ml-2 absolute left-0 rounded-lg border-[1px] border-neutral-400 bg-white p-1.5 text-2xl transition-opacity cursor-pointer ${
                 CAN_SHIFT_LEFT ? "" : "opacity-30"
@@ -75,7 +74,6 @@ const arousel = () => {
               <FiArrowRight />
             </button>
           </div>
-        </div>
       </div>
     </section>
   );
@@ -101,7 +99,7 @@ const Post = ({ imgUrl, title, description }: PostType) => {
   );
 };
 
-export default arousel;
+export default Carousel;
 
 type PostType = {
   id: number;

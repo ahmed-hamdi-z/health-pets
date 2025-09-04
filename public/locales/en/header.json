@@ -1,0 +1,13 @@
+{
+  "title": "header",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "blogs": "Blogs",
+    "partners": "Partners",
+    "contact": "Contact",
+    "lang": "العربية"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "",
+  "description": "",
+
+  "ourTreatments": {
+    "title": "",
+    "items": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "title": "",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  "whyOurTreatment": {
+    "title": "",
+    "items": {
+      "itemOne": "",
+      "itemTwo": "",
+      "itemThree": "",
+      "itemFour": ""
+    }
+  }
+}

@@ -1,39 +1,39 @@
 import React from "react";
 import AboutUsCard from "./about-card";
 import SectionContainer from "../../containers/SectionContainer";
+import { useTranslation } from "react-i18next";
 
 const AboutUsSection: React.FC = () => {
+  const { t } = useTranslation("about");
   return (
     <SectionContainer className="w-full bg-gray-50">
-      <div className="">
-        <div className="space-y-6 md:space-y-8">
-          {/* Mission Card */}
-          <AboutUsCard
-            title="Mission"
-            content="Our mission at Healthy Pets is to deliver exceptional veterinary care and preventive services for pets and their families in Riyadh. using advanced technology and modern treatments."
-            imageUrl="/images/about-mission.png"
-            imagePosition="left"
-            className="rounded-r-full bg-[#99D8E0]/70"
-          />
+      <div className="space-y-6 md:space-y-8">
+        {/* Mission Card */}
+        <AboutUsCard
+          title={t("ourConcepts.mission.title")}
+          content={t("ourConcepts.mission.description")}
+          imageUrl="/images/about-mission.png"
+          imagePosition="left"
+          className="rounded-r-full bg-[#99D8E0]/70 "
+        />
 
-          {/* Vision Card */}
-          <AboutUsCard
-            title="Vision"
-            content="To be Riyadh's premier pet healthcare destination, offering state-of-the-artmedical services in a luxurious,nurturing environment"
-            imageUrl="/images/about-vision.png"
-            imagePosition="right"
-            className="rounded-l-full bg-[#F9EFA7]"
-          />
+        {/* Vision Card */}
+        <AboutUsCard
+          title={t("ourConcepts.vision.title")}
+          content={t("ourConcepts.vision.description")}
+          imageUrl="/images/about-vision.png"
+          imagePosition="right"
+          className="rounded-l-full bg-[#F9EFA7]"
+        />
 
-          {/* Core Values Card */}
-          <AboutUsCard
-            title="Core Values"
-            content="Compassion: Treating pets as family. Excellence: Providing top-quality veterinary care Trust: Transparency and reliability. Innovation: Cutting-edge treatments "
-            imageUrl="/images/about-value.png"
-            imagePosition="left"
-            className="rounded-r-full bg-[#99D8E0]/70"
-          />
-        </div>
+        {/* Core Values Card */}
+        <AboutUsCard
+          title={t("ourConcepts.core-values.title")}
+          content={t("ourConcepts.core-values.description" )}
+          imageUrl="/images/about-value.png"
+          imagePosition="left"
+          className="rounded-r-full bg-[#99D8E0]/70"
+        />
       </div>
     </SectionContainer>
   );

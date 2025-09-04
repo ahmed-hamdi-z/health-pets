@@ -9,7 +9,7 @@ type AboutHeroProps = {
 };
 
 const AboutHero = ({ title, imageUrl }: AboutHeroProps) => {
-  const { i18n } = useTranslation(["home", "common"]);
+  const { t, i18n } = useTranslation(["header"]);
   const { targetRef, isInView } = useScrollInToView();
 
   return (
@@ -33,6 +33,7 @@ const AboutHero = ({ title, imageUrl }: AboutHeroProps) => {
         className={trim(`
           flex 
           flex-row 
+          rtl:flex-row-reverse
           items-center 
           justify-center
           md:gap-24
@@ -52,7 +53,7 @@ const AboutHero = ({ title, imageUrl }: AboutHeroProps) => {
             ${isInView ? "opacity-100" : "opacity-0"}
             `)}
         >
-          {title}
+          {t(title)}
         </h1>
         <img className="md:w-[35%] w-[50%] md:translate-y-0 translate-y-1/3" src={imageUrl} alt="" />
       </div>

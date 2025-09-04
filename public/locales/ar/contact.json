@@ -1,0 +1,55 @@
+{
+  "title": "",
+  "info": {
+    "title": "",
+    "description": "",
+    "phone": "",
+    "email": "",
+    "address": ""
+  },
+  "form": {
+    "name": {
+      "placeholder": "",
+      "errors": {
+        "required": "",
+        "min": "",
+        "max": ""
+      }
+    },
+    "email": {
+      "placeholder": "",
+      "errors": {
+        "required": "",
+        "invalid": ""
+      }
+    },
+    "type": {
+      "placeholder": "",
+      "items": ["", "", "", ""],
+      "errors": {
+        "required": ""
+      }
+    },
+    "phone": {
+      "placeholder": "",
+      "errors": {
+        "required": "",
+        "min": "",
+        "max": "",
+        "invalid": ""
+      }
+    },
+    "message": {
+      "placeholder": "",
+      "errors": {
+        "required": "",
+        "min": "",
+        "max": ""
+      }
+    }
+  },
+  "feedback": {
+    "success": "",
+    "error": ""
+  }
+}

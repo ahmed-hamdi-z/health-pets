@@ -8,7 +8,6 @@ export default function Providers({ children }: { children: ReactNode }) {
 
   return (
     <BrowserRouter>
-      {" "}
       <Toaster />
       {children}
     </BrowserRouter>

@@ -66,7 +66,7 @@ const PetShowcase: React.FC<PetShowcaseProps> = ({
       {/* Right Image */}
       <div className="w-1/2 hidden md:flex">
         <div
-          className="bg-cover bg-no-repeat w-full h-full flex items-center justify-center translate-y-14 "
+          className="bg-cover bg-no-repeat w-full h-full flex items-center justify-center translate-y-14 rtl:-scale-x-100 "
           style={{
             backgroundImage: `url("/images/Vector.svg")`,
           }}

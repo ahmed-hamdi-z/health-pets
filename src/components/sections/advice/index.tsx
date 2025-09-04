@@ -33,18 +33,17 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
     <SectionContainer
       ref={targetRef}
       id="#section-container"
-      className={`w-full section-bg ease-in-out duration-1000  ${
-        isInView ? "opacity-100" : "opacity-0"
-      }`}
+      className={`w-full section-bg ease-in-out duration-1000  ${isInView ? "opacity-100" : "opacity-0"
+        }`}
     >
-      <div className="flex flex-col md:flex-row items-center ">
+      <div className="flex flex-col md:flex-row md:rtl:flex-row-reverse items-center ">
         <AdviceColumn
           petImage="/images/advice.png"
           title="Advice"
           paragraphs={adviceText}
         />
 
-        <div className="space-y-2 px-4 w-full h-[70%] place-content-end md:translate-x-1/12 -translate-y-16">
+        <div className="space-y-2 px-8 w-full h-[70%] place-content-end md:translate-x-1/12 -translate-y-16 md:rtl:-translate-x-1/2">
           <div className="bg-no-repeat bg-contain md:w-42 md:h-42 w-24 h-24 bg-[url('/images/hand.svg')] md:mx-auto ml-auto translate-y-1/4" />
           <h2 className="text-3xl sm:text-5xl font-bold text-[#4C4C4C]">
             Core Values
@@ -56,7 +55,7 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
               description={value.description}
             />
           ))}
-          <button className="translate-y-12 translate-x-40 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
+          <button className="translate-y-12 translate-x-40 md:rtl:-translate-x-1/2 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
             {ctaText}
           </button>
         </div>
