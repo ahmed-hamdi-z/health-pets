@@ -15,5 +15,22 @@
       "title": "Core Values",
       "description": "Compassion: Treating pets as family. Excellence: Providing top-quality veterinary care Trust: Transparency and reliability. Innovation: Cutting-edge treatments"
     }
+  },
+
+  "Compassion": {
+    "title": "Compassion",
+    "description":"Treating pets as family."
+  },
+  "Excellence": {
+    "title": "Excellence",
+    "description":"Providing top-quality veterinary care."
+  },
+  "Trust": {
+    "title": "Trust",
+    "description":"Transparency and reliability."
+  },
+  "Innovation": {
+    "title": "Innovation",
+    "description":"Cutting-edge treatments."
   }
 }

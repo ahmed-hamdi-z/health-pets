@@ -8,7 +8,6 @@ const AboutUsSection: React.FC = () => {
   return (
     <SectionContainer className="w-full bg-gray-50">
       <div className="space-y-6 md:space-y-8">
-        {/* Mission Card */}
         <AboutUsCard
           title={t("ourConcepts.mission.title")}
           content={t("ourConcepts.mission.description")}
@@ -17,7 +16,6 @@ const AboutUsSection: React.FC = () => {
           className="rounded-r-full bg-[#99D8E0]/70 "
         />
 
-        {/* Vision Card */}
         <AboutUsCard
           title={t("ourConcepts.vision.title")}
           content={t("ourConcepts.vision.description")}
@@ -26,7 +24,6 @@ const AboutUsSection: React.FC = () => {
           className="rounded-l-full bg-[#F9EFA7]"
         />
 
-        {/* Core Values Card */}
         <AboutUsCard
           title={t("ourConcepts.core-values.title")}
           content={t("ourConcepts.core-values.description" )}

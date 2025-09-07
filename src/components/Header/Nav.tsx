@@ -46,7 +46,8 @@ const Nav = () => {
         w-full
         md:px-[3%]
         lg:px-[10%]
-        xl:px-[15%]`)}
+        xl:px-[15%]
+        z-50`)}
     >
       <div className="max-w-[250px] px-2 py-1 bg-white rounded-full ltr:-translate-x-1/2 translate-x-1/2 hidden md:block">
         <Logo

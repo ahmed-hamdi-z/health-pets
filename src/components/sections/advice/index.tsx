@@ -3,6 +3,7 @@ import AdviceColumn from "./advice-column";
 import CoreValueCard from "./core-value-card";
 import SectionContainer from "../../containers/SectionContainer";
 import useScrollInToView from "../../../hooks/useScrollInToView";
+import { useTranslation } from "react-i18next";
 
 export type CoreValueItem = {
   title: string;
@@ -29,6 +30,7 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
   ctaText,
 }) => {
   const { targetRef, isInView } = useScrollInToView();
+  const { t } = useTranslation(["about", "common"]);
   return (
     <SectionContainer
       ref={targetRef}
@@ -46,8 +48,8 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
         <div className="space-y-2 px-8 w-full h-[70%] place-content-end md:translate-x-1/12 -translate-y-16 md:rtl:-translate-x-1/2">
           <div className="bg-no-repeat bg-contain md:w-42 md:h-42 w-24 h-24 bg-[url('/images/hand.svg')] md:mx-auto ml-auto translate-y-1/4" />
           <h2 className="text-3xl sm:text-5xl font-bold text-[#4C4C4C]">
-            Core Values
-          </h2>
+            {t("ourConcepts.core-values.title")}
+          </h2> 
           {coreValues.map((value, index) => (
             <CoreValueCard
               key={index}
@@ -55,8 +57,8 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
               description={value.description}
             />
           ))}
-          <button className="translate-y-12 translate-x-40 md:rtl:-translate-x-1/2 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
-            {ctaText}
+          <button className="translate-y-12 translate-x-40 md:rtl:-translate-x-1/2 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs font-semibold cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
+            {t(ctaText, { ns: "common" })}
           </button>
         </div>
       </div>
@@ -74,20 +76,20 @@ const AdviceSection = () => {
 
   const coreValues: CoreValueItem[] = [
     {
-      title: "Compassion",
-      description: "Treating pets as family.",
+      title: "ourConcepts.Compassion.title",
+      description: "ourConcepts.Compassion.description",
     },
     {
-      title: "Excellence",
-      description: "Providing top-quality veterinary care",
+      title: "ourConcepts.Excellence.title",
+      description: "ourConcepts.Excellence.description",
     },
     {
-      title: "Trust",
-      description: "Transparency and reliability",
+      title: "ourConcepts.Trust.title",
+      description: "ourConcepts.Trust.description",
     },
     {
-      title: "Innovation",
-      description: "Cutting-edge treatments.",
+      title: "ourConcepts.Innovation.title",
+      description: "ourConcepts.Innovation.description",
     },
   ];
 
@@ -95,7 +97,7 @@ const AdviceSection = () => {
     <AdviceSectionContainer
       adviceText={adviceText}
       coreValues={coreValues}
-      ctaText="Book Now"
+      ctaText="book-now"
     />
   );
 };
