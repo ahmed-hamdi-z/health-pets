@@ -73,7 +73,7 @@ const HomeHero = () => {
             text-xl
             md:text-5xl
             font-bold text-black`)}
-          > Healthy pets...Happy gets...
+          > {t("slogan", { ns: "common" })}
           </h3>
         </div>{" "}
         <button

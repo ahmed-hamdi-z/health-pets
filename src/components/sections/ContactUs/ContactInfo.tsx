@@ -1,9 +1,8 @@
-// import { useTranslation } from "react-i18next";
-
+import { useTranslation } from "react-i18next";
 import { trim } from "../../../utils/general";
 
 const ContactInfo = () => {
-  // const { t } = useTranslation(["contact"]);
+  const { t } = useTranslation("common");
 
   return (
     <div
@@ -20,7 +19,7 @@ const ContactInfo = () => {
         rounded-3xl`)}
     >
       <h3 className="md:text-4xl text-[16px] font-bold inline-block">
-        {/* {t("info.title")} */}  Healthy pets...Happy gets...
+        {/* {t("info.title")} */}  {t("slogan")}
       </h3>
 
       <img className="w-full h-full" src="/images/contact.png" alt="" />
