@@ -10,7 +10,7 @@ import ButtonStyled from "../ButtonStyled";
 const tailWindClasses = {
   aside: {
     width: "w-2/3",
-    bg: "bg-black",
+    bg: "bg-[#99D8E0]/90",
     darkBg: null,
   },
   backDrop: {
