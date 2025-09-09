@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import SectionHeader from "../../SectionHeader";
+import { useTranslation } from "react-i18next";
 
 const CARD_SIZE_LG = 365;
 const CARD_SIZE_SM = 290;
@@ -20,6 +21,7 @@ const CENTER_STAGGER = -65;
 const SECTION_HEIGHT = 600;
 
 export const StaggerTestimonials = () => {
+  const { t, i18n } = useTranslation("common");
   const [cardSize, setCardSize] = useState(CARD_SIZE_LG);
 
   const [testimonials, setTestimonials] = useState(TESTIMONIAL_DATA);
@@ -73,7 +75,7 @@ export const StaggerTestimonials = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <SectionHeader className="" title="Testimonials" />
+      <SectionHeader className="" title={t("Testimonials")} />
       <div
         className="relative w-full overflow-hidden  mb-20"
         style={{
@@ -104,13 +106,15 @@ export const StaggerTestimonials = () => {
             onClick={() => handleMove(-1)}
             className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
           >
-            <GoArrowLeft />
+            {i18n.dir() === "rtl" ? <GoArrowRight /> : <GoArrowLeft />}
+
           </button>
           <button
             onClick={() => handleMove(1)}
             className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-[#99D8E0]/70 hover:text-white"
           >
-            <GoArrowRight />
+            {i18n.dir() === "ltr" ? <GoArrowRight /> : <GoArrowLeft />}
+
           </button>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import SectionHeader from "../../SectionHeader";
 import ReelsCard from "./reels-card";
 
@@ -19,9 +20,11 @@ const reels = [
   },
 ];
 const Reels = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div className="flex flex-col items-center">
-      <SectionHeader className="" title="Reels" />
+      <SectionHeader className="" title={t("Reels")} />
       <ReelsCard reels={reels} />
     </div>
   );

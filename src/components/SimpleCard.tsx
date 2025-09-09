@@ -1,6 +1,7 @@
 import useScrollInToView from "../hooks/useScrollInToView";
 import { trim } from "../utils/general";
 
+
 const SimpleCard = ({
   img,
   title,
@@ -43,9 +44,9 @@ const SimpleCard = ({
           ${imgClassName}`)}
       />
 
-      <div className="text-primary">
-        <h3 className="text-responsive-lg font-semibold">{title}</h3>
-        <h4 className="text-responsive-md font-thin">{subTitle}</h4>
+      <div className="text-black">
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <h4 className="text-md font-thin line-clamp-2">{subTitle}</h4>
       </div>
     </div>
   );

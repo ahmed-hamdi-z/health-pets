@@ -12,63 +12,63 @@ const ServicesPageSection: React.FC = () => {
                     <AboutUsCard
                         title={t("ourConcepts.General.title")}
                         content={t("ourConcepts.General.description")}
-                        imageUrl="/images/about-mission.png"
+                        imageUrl="/images/General-cheak-up.png"
                         imagePosition="left"
                         className="rounded-r-full bg-[#99D8E0]/70"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Vaccinations.title")}
                         content={t("ourConcepts.Vaccinations.description")}
-                        imageUrl="/images/about-vision.png"
+                        imageUrl="/images/Vaccinations.png"
                         imagePosition="right"
                         className="rounded-l-full bg-[#F9EFA7]"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Surgeries.title")}
                         content={t("ourConcepts.Surgeries.description")}
-                        imageUrl="/images/about-value.png"
+                        imageUrl="/images/Pet-surgeries.png"
                         imagePosition="left"
                         className="rounded-r-full bg-[#99D8E0]/70"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Dental-care.title")}
                         content={t("ourConcepts.Dental-care.description")}
-                        imageUrl="/images/about-vision.png"
+                        imageUrl="/images/Dental.png"
                         imagePosition="right"
                         className="rounded-l-full bg-[#F9EFA7]"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Grooming.title")}
                         content={t("ourConcepts.Grooming.description")}
-                        imageUrl="/images/about-value.png"
+                        imageUrl="/images/Grooming.png"
                         imagePosition="left"
                         className="rounded-r-full bg-[#99D8E0]/70"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Laboratory.title")}
                         content={t("ourConcepts.Laboratory.description")}
-                        imageUrl="/images/about-vision.png"
+                        imageUrl="/images/Laboratory.png"
                         imagePosition="right"
                         className="rounded-l-full bg-[#F9EFA7]"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.X-Ray.title")}
                         content={t("ourConcepts.X-Ray.description")}
-                        imageUrl="/images/about-value.png"
+                        imageUrl="/images/X-Ray.png"
                         imagePosition="left"
                         className="rounded-r-full bg-[#99D8E0]/70"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Isolation.title")}
                         content={t("ourConcepts.Isolation.description")}
-                        imageUrl="/images/about-vision.png"
+                        imageUrl="/images/Isolation.png"
                         imagePosition="right"
                         className="rounded-l-full bg-[#F9EFA7]"
                     />
                     <AboutUsCard
                         title={t("ourConcepts.Pharmacy.title")}
                         content={t("ourConcepts.Pharmacy.description")}
-                        imageUrl="/images/about-value.png"
+                        imageUrl="/images/Pharmacy.png"
                         imagePosition="left"
                         className="rounded-r-full bg-[#99D8E0]/70"
                     />

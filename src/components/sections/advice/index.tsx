@@ -4,6 +4,7 @@ import CoreValueCard from "./core-value-card";
 import SectionContainer from "../../containers/SectionContainer";
 import useScrollInToView from "../../../hooks/useScrollInToView";
 import { useTranslation } from "react-i18next";
+import { appRoutes } from "../../../config";
 
 export type CoreValueItem = {
   title: string;
@@ -45,11 +46,11 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
           paragraphs={adviceText}
         />
 
-        <div className="space-y-2 px-8 w-full h-[70%] place-content-end md:translate-x-1/12 -translate-y-16 md:rtl:-translate-x-1/2">
+        <div className="space-y-2 px-8 w-full h-[70%] place-content-end md:translate-x-1/12 -translate-y-16 md:rtl:-translate-x-1/4">
           <div className="bg-no-repeat bg-contain md:w-42 md:h-42 w-24 h-24 bg-[url('/images/hand.svg')] md:mx-auto ml-auto translate-y-1/4" />
           <h2 className="text-3xl sm:text-5xl font-bold text-[#4C4C4C]">
             {t("ourConcepts.core-values.title")}
-          </h2> 
+          </h2>
           {coreValues.map((value, index) => (
             <CoreValueCard
               key={index}
@@ -57,9 +58,9 @@ const AdviceSectionContainer: React.FC<AdviceSectionProps> = ({
               description={value.description}
             />
           ))}
-          <button className="translate-y-12 translate-x-40 md:rtl:-translate-x-1/2 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs font-semibold cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
+          <a href={appRoutes.contact} className="absolute rtl:left-1/2 left-1/4 rtl:translate-x-1/4 mt-10 bg-gradient-to-tl from-[#F79437] to-white px-6 py-2 rounded-xl text-xs font-semibold cursor-pointer scale-100 hover:scale-105 duration-300 translate-all ">
             {t(ctaText, { ns: "common" })}
-          </button>
+          </a>
         </div>
       </div>
     </SectionContainer>
@@ -76,20 +77,20 @@ const AdviceSection = () => {
 
   const coreValues: CoreValueItem[] = [
     {
-      title: "ourConcepts.Compassion.title",
-      description: "ourConcepts.Compassion.description",
+      title: "Compassiontitle",
+      description: "Compassiondescription",
     },
     {
-      title: "ourConcepts.Excellence.title",
-      description: "ourConcepts.Excellence.description",
+      title: "Excellencetitle",
+      description: "Excellencedescription",
     },
     {
-      title: "ourConcepts.Trust.title",
-      description: "ourConcepts.Trust.description",
+      title: "Trusttitle",
+      description: "Trustdescription",
     },
     {
-      title: "ourConcepts.Innovation.title",
-      description: "ourConcepts.Innovation.description",
+      title: "Innovationtitle",
+      description: "Innovationdescription",
     },
   ];
 

@@ -19,15 +19,18 @@ const Home = () => {
       <OurProjects />
       <>
         <PetShowcase
-          title="Explore all"
-          subtitle="about your pet"
-          description="Pamper your pet with safe and premium products, because they deserve the best. Discover the perfect combination of vitamins, minerals, and nutrients to nourish your furry companion and keep them healthy and happy."
+          title="Explore-title"
+          subtitle="Explore-subtitle" 
+          description="Explore-description"
           products={[
-            { id: 1, image: "/images/cat.jpg" },
-            { id: 2, image: "/images/cat.jpg" },
-            { id: 3, image: "/images/cat.jpg" },
-            { id: 4, image: "/images/cat.jpg" },
-            { id: 5, image: "/images/cat.jpg" },
+            { id: 1, image: "/images/By-Pet.jpg", title: "product.product1.title", description: "product.product1.description" },
+            { id: 2, image: "/images/Food-Feeding.jpg", title: "product.product2.title", description: "product.product2.description" },
+            { id: 3, image: "/images/Health.jpg", title: "product.product3.title", description: "product.product3.description" },
+            { id: 4, image: "/images/Accessories.jpg", title: "product.product4.title", description: "product.product4.description" },
+            { id: 5, image: "/images/Toys.jpg", title: "product.product5.title", description: "product.product5.description" },
+            { id: 5, image: "/images/Housing.jpg", title: "product.product6.title", description: "product.product6.description" },
+            { id: 5, image: "/images/Cleaning.jpg", title: "product.product7.title", description: "product.product7.description" },
+            { id: 5, image: "/images/Training.jpg", title: "product.product8.title", description: "product.product8.description" },
           ]}
           exploreLink="#"
           petImage="/images/cat-shop.png"

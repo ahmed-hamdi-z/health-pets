@@ -6,7 +6,7 @@ import AboutInfo from "../components/sections/about/about-info";
 import DoctorsSection from "../components/sections/doctors";
 import img from "/images/about-hero-img.png";
 
-export const About = () => {
+const About = () => {
   const { t } = useTranslation(["header"]);
   return (
     <PageContainer>
@@ -17,3 +17,5 @@ export const About = () => {
     </PageContainer>
   );
 };
+
+export default About;

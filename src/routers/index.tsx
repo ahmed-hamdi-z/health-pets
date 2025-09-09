@@ -1,22 +1,16 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { appRoutes } from "../config";
-import { About } from "../pages/About";
-import Contact from "../pages/Contact";
-import Blogs from "../pages/Blogs";
-import NotFound from "../pages/NotFound";
-import Products from "../pages/Products";
-import Services from "../pages/Services";
-import Loading from "../pages/Loading";
+import Loading from "../pages/Loading"; 
 
-// const NotFound = lazy(() => import("../pages/NotFound"));
 const Home = lazy(() => import("../pages/Home"));
-// const About = lazy(() => import("../pages/About"));
-// const Products = lazy(() => import("../pages/Products"));
-// const Blogs = lazy(() => import("../pages/Blogs"));
-// const Treatments = lazy(() => import("../pages/Treatments"));
-// const Contact = lazy(() => import("../pages/Contact"));
-// const Articles = lazy(() => import("../pages/Articles"));
+const About = lazy(() => import("../pages/About"));
+const Blogs = lazy(() => import("../pages/Blogs"));
+const Articles = lazy(() => import("../pages/Articles"));
+const Products = lazy(() => import("../pages/Products"));
+const Services = lazy(() => import("../pages/Services"));
+const Contact = lazy(() => import("../pages/Contact"));
+const NotFound = lazy(() => import("../pages/NotFound"));
 
 export default function Routers() {
   return (
@@ -24,20 +18,15 @@ export default function Routers() {
       <Routes>
         <Route path={appRoutes.home} element={<Home />} />
         <Route path={appRoutes.about} element={<About />} />
-        <Route path={appRoutes.contact} element={<Contact />} />
         <Route path={appRoutes.blogs} element={<Blogs />} />
-        <Route path={appRoutes.products} element={<Products />} />
-        <Route path={appRoutes.services} element={<Services />} />
-        <Route path="*" element={<NotFound />} />
-
-
-        {/*
         <Route
           path={`${appRoutes.blogs}${appRoutes.articlesQuery.path}`}
           element={<Articles />}
         />
-        <Route path={appRoutes.treatments} element={<Treatments />} />
-        */}
+        <Route path={appRoutes.products} element={<Products />} />
+        <Route path={appRoutes.services} element={<Services />} />
+        <Route path={appRoutes.contact} element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
   );

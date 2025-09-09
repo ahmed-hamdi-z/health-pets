@@ -1,46 +1,36 @@
 {
-  "title": "",
-  "download": "",
-  "categories": [
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    },
-    {
-      "title": "",
-      "items": [""]
-    }
-  ]
+"product": {
+  "product1": {
+    "title": "By Pet Type",
+    "description": "Dogs, Cats, Birds,Small pet & Exotic Pet"
+  },
+    "product2": {
+    "title": "Food & Feeding",
+    "description": "Dry Food, Wet Food, Treats & Chews, Special Diets, Bowls, Feeders & Water Fountains"
+  },
+    "product3": {
+    "title": "Health & Wellness",
+    "description": "Vitamins & Supplements, Grooming & Dental Care, Flea, Tick & Worm Control, First Aid & Medicines"
+  },
+    "product4": {
+    "title": "Accessories",
+    "description": "DCollars, Leashes & Harnesses, Beds, Carriers & Mats, Clothing, perfume & Travel Accessories"
+  },
+    "product5": {
+    "title": "Toys & Entertainment",
+    "description": "Chew Toys, Interactive Toys, Cat Trees & Scratching Post&Playpens"
+  },
+    "product6": {
+    "title": "Housing & Habitat",
+    "description": "Cages & Crates, Bird Cages, Bedding & Litter"
+  },
+    "product7": {
+    "title": "Cleaning & Hygiene",
+    "description": "Litter( Cat,Rabbit,Hamster ) & Litter Boxes, Poop Bags & Scoopers, Cleaning Supplies."
+  },
+    "product8": {
+    "title": "Training & Behavior",
+    "description": "Training Pads, Clickers & Whistles, Behavior Aids, Calming Products"
+  }
+}
 }

@@ -1,6 +1,6 @@
 {
   "coName": "",
-  "contactUs": "",
+  "contactUs": "تواصل معنا",
   "shopNow": "",
   "getOffer": "",
   "downloadDetails": "",
@@ -13,8 +13,12 @@
   "More": "أكثـر",
   "Than": "من",
   "Products": "مـنـتـج",
+  "Reels": "ريـــلات",
+  "Gallary": "المعرض",
+  "Testimonials": "أراء العملاء",
   "hero": {
     "title": "",
     "subtitle": ""
-  }
+  },
+  "learn-more": "اكتشف المزيد"
 }

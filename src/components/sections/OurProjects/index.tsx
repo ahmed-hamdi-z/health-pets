@@ -9,6 +9,7 @@ import projectOne from "/images/cat.jpg";
 
 import SectionContainer from "../../containers/SectionContainer";
 import SectionHeader from "../../SectionHeader";
+import { useTranslation } from "react-i18next";
 
 const images: { src: string }[] = [
   { src: projectOne },
@@ -21,15 +22,13 @@ const images: { src: string }[] = [
 
 const OurProjects = () => {
   const [open, setOpen] = useState(false);
-
   useRemoveScroll(open);
-
-  // const { t } = useTranslation(["home"]);
+  const { t } = useTranslation(["common"]);
 
   return (
     <SectionContainer>
       <div className="flex flex-col items-center justify-center mx-auto">
-        <SectionHeader title="Gallary" />
+        <SectionHeader title={t("Gallary")} />
         <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-5 ">
           {images.map((image, i) => (
             <ProjectCard image={image} key={i} setOpen={setOpen} />

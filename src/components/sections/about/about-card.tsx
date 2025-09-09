@@ -36,7 +36,7 @@ const AboutUsCard: React.FC<AboutUsCardProps> = ({
         </p>
       </div>
       <img
-        className={`md:w-1/4 w-1/3  ${isImageLeft
+        className={`md:w-1/4 w-1/3 ${isImageLeft
           ? "md:flex hidden 2xl:-translate-y-6 2xl:-translate-x-80 md:-translate-y-5 md:-translate-x-50 -translate-y-2 md:rounded-[0%] rounded-[30%] -translate-x-7  scale-80 2xl:scale-60"
           : "md:flex hidden 2xl:-translate-y-16 2xl:-translate-x-20 md:-translate-y-10 md:translate-x-30 -translate-y-2 md:rounded-[0%] rounded-[30%] -translate-x-7  md:scale-120"
           }`}

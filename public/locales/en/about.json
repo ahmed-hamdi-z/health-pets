@@ -16,21 +16,24 @@
       "description": "Compassion: Treating pets as family. Excellence: Providing top-quality veterinary care Trust: Transparency and reliability. Innovation: Cutting-edge treatments"
     }
   },
+   
+      "Compassiontitle": "Compassion",
+      "Compassiondescription": "Treating pets as family.",
 
-  "Compassion": {
-    "title": "Compassion",
-    "description":"Treating pets as family."
-  },
-  "Excellence": {
-    "title": "Excellence",
-    "description":"Providing top-quality veterinary care."
-  },
-  "Trust": {
-    "title": "Trust",
-    "description":"Transparency and reliability."
-  },
-  "Innovation": {
-    "title": "Innovation",
-    "description":"Cutting-edge treatments."
-  }
+      "Excellencetitle": "Excellence",
+      "Excellencedescription": "Providing top-quality veterinary care.",
+  
+      "Trusttitle": "Trust",
+      "Trustdescription": "Transparency and reliability.",
+
+      "Innovationtitle": "Innovation",
+      "Innovationdescription": "Cutting-edge treatments.",
+ 
+  "Advice": "Advice",
+  "Advice-description": "Behind every happy pet is a responsible owner who understands that regular veterinary care, proper nutrition, and a safe environment are the foundation for a healthy and joyful life.",
+
+  "Explore-title": "Explore all",
+  "Explore-subtitle": "about your pet",
+  "Explore-description": "Pamper your pet with safe and premium products, because they deserve the best. Discover the perfect combination of vitamins, minerals, and nutrients to nourish your furry companion and keep them healthy and happy."
+
 }

@@ -65,7 +65,7 @@ const HomeHero = () => {
             ease-in-out
             delay-300
             ${isInView ? "opacity-100" : "opacity-0"}
-            ${i18n.language === "ar" ? "md:max-w-[70%]" : ""}`)}
+            ${i18n.language === "ar" ? "" : ""}`)}
         >
 
           <h3
@@ -73,9 +73,7 @@ const HomeHero = () => {
             text-xl
             md:text-5xl
             font-bold text-black`)}
-          >
-            {/* {t("coName", { ns: "common" })} */} Healthy pets...Happy
-            gets...
+          > Healthy pets...Happy gets...
           </h3>
         </div>{" "}
         <button
@@ -96,10 +94,10 @@ const HomeHero = () => {
             shadow-md
             shadow-[#48BACC]/50
             ${isInView ? "opacity-100" : "opacity-0"}`)}
-          title={t("Contact Us", { ns: "common" })}
+          title={t("contactUs", { ns: "common" })}
           onClick={() => push(appRoutes.contact)}
         >
-          {t("Contact Us", { ns: "common" })}
+          {t("contactUs", { ns: "common" })}
         </button>
       </div>
     </SectionContainer>

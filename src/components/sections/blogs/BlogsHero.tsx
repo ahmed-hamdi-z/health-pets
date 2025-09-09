@@ -1,16 +1,16 @@
 import { useTranslation } from "react-i18next";
-import blogOneImg from "/images/cat.jpg";
-// import blogOneImg from "../../assets/imgs/blog-one.png";
-// import blogTwoImg from "../../assets/imgs/blog-two.png";
-// import blogThreeImg from "../../assets/imgs/blog-three.png";
+import blogOneImg from "../../../assets/img/cat.jpg";
+import blogTwoImg from "../../../assets/img/cat.jpg";
+import blogThreeImg from "../../../assets/img/cat.jpg";
 import { useNavigate } from "react-router-dom";
 import useScrollInToView from "../../../hooks/useScrollInToView";
 import { appRoutes } from "../../../config";
+import { ArticlesEnum } from "../../../enum/Articles";
 import useActivation from "../../../hooks/useActivation";
 import SectionContainer from "../../containers/SectionContainer";
 import { trim } from "../../../utils/general";
 import SimpleCard from "../../SimpleCard";
-import { ArticlesEnum } from "../../../enum/Articles";
+
 
 const BlogsHero = () => {
   const { t } = useTranslation(["blogs", "common"]);
@@ -35,7 +35,7 @@ const BlogsHero = () => {
         ),
     },
     {
-      img: blogOneImg,
+      img: blogTwoImg,
       title: blogsHeadersArr[2].title,
       subTitle: blogsHeadersArr[2].subTitle,
       onClick: () =>
@@ -44,7 +44,7 @@ const BlogsHero = () => {
         ),
     },
     {
-      img: blogOneImg,
+      img: blogThreeImg,
       title: blogsHeadersArr[3].title,
       subTitle: blogsHeadersArr[3].subTitle,
       onClick: () =>
@@ -59,16 +59,16 @@ const BlogsHero = () => {
   });
 
   return (
-    <SectionContainer ref={targetRef} wraperClassName="lg:flex-row pt-6 gap-6">
+    <SectionContainer ref={targetRef} wraperClassName="lg:flex-row p-6 gap-6">
       <div
         className={trim(`
           relative
           flex-1
           flex
           flex-col
-          min-h-[300px]
+          min-h-[200px]
           bg-center
-          bg-full-cup-pattern
+          bg-[url('/images/cat.jpg')]
           bg-cover
           transition-opacity
           duration-500
@@ -91,12 +91,12 @@ const BlogsHero = () => {
             flex-col
             w-full
             p-6
-            text-white
+            text-black
             bg-gradient-t-dark
-            group-hover:text-secondary`)}
+            group-hover:text-white`)}
         >
-          <h3 className="text-responsive-lg">{blogsHeadersArr[1].title}</h3>
-          <h4 className="text-responsive-md font-thin">
+          <h3 className="text-lg">{blogsHeadersArr[1].title}</h3>
+          <h4 className="text-md font-thin line-clamp-2">
             {blogsHeadersArr[1].subTitle}
           </h4>
         </div>
@@ -118,8 +118,8 @@ const BlogsHero = () => {
           <SimpleCard
             key={i}
             {...blog}
-            className="lg:flex-row flex-col cursor-pointer hover:bg-gray-200 text-center lg:text-start max-w-[350px] lg:max-w-full"
-            imgClassName="max-w-[350px] md:max-w-[250px]"
+            className="lg:flex-row flex-col cursor-pointer hover:bg-gray-200 text-center lg:text-start max-w-[350px] max-h-[200px] lg:max-w-full"
+            imgClassName="max-w-[350px]  max-h-[200px]"
             parentInToView={activationArr[i].active}
           />
         ))}

@@ -1,6 +1,6 @@
 {
   "coName": "",
-  "contactUs": "",
+  "contactUs": "Contact us",
   "shopNow": "",
   "getOffer": "",
   "submit": "",
@@ -13,8 +13,13 @@
   "More": "More",
   "Than": "Than",
   "Products": "Product",
+  "Reels": "Reels",
+  "Gallary": "Gallary",
+  "Testimonials": "Testimonials",
   "hero": {
     "title": "",
     "subtitle": ""
-  }
+  },
+  "learn-more": "Explore More"
+
 }

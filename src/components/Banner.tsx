@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
 import SectionContainer from "./containers/SectionContainer";
 import { useTranslation } from "react-i18next";
 import ButtonStyled from "./ButtonStyled";
 import { useNavigate } from "react-router-dom";
 import SectionHeader from "./SectionHeader";
+import type { ReactNode } from "react";
 import useScrollInToView from "../hooks/useScrollInToView";
 import { trim } from "../utils/general";
 import { appRoutes } from "../config";

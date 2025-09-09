@@ -32,8 +32,10 @@ const SectionContainer = forwardRef(
         id="section-wrapper"
         className={trim(`
           flex
-          flex-row
+          flex-col
           w-full
+          2xl:w-[70%]
+          containerPadding
           ${wraperClassName}`)}
       >
         {children}

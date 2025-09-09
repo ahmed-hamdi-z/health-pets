@@ -1,3 +1,5 @@
+import React from "react";
+
 interface InfoCardProps {
   title: string;
   description: string;
@@ -5,37 +7,21 @@ interface InfoCardProps {
 
 const InfoCard: React.FC<InfoCardProps> = ({ title, description }) => {
   return (
-    <div className="w-full h-full flex flex-col mt-10">
-      <div className="absolute rounded-full bg-[#E09341] opacity-30 w-96 ltr:h-32 h-34" />
-      <div className="bg-transparent md:w-96 w-80 flex flex-col items-center justify-between p-2">
-        <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">
+    // Set a relative container to contain the absolute positioned background
+    <div className="relative w-80 max-w-full text-center">
+      {/* Background decorative circle */}
+      <div className="absolute left-1/2 top-0 -z-10 h-32 w-80 -translate-x-1/2 rounded-full bg-[#E09341] opacity-30" />
+
+      <div className="flex flex-col items-center justify-center pt-2 px-3">
+        <h3 className="text-xl font-bold text-gray-800 md:text-xl">
           {title}
         </h3>
-        <p className="text-sm sm:text-base text-[#000] px-9 rtl:text-right line-clamp-3">{description}</p>
+        <p className="mt-1 px-4 text-base text-black rtl:text-right line-clamp-3">
+          {description}
+        </p>
       </div>
     </div>
   );
 };
 
 export default InfoCard;
-
-
-interface InfoCardProps {
-  title: string;
-  description: string;
-}
-
-// const InfoCard: React.FC<InfoCardProps> = ({ title, description }) => {
-//   return (
-//     <div className=" bg-[#f5c695] rounded-full ">
-//       <div className="bg-transparent md:w-96 w-80 flex flex-col items-center justify-between p-2">
-//         <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">
-//           {title}
-//         </h3>
-//         <p className="text-sm sm:text-base text-[#4C4C4C] px-9 rtl:text-right line-clamp-3">{description}</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default InfoCard;

@@ -10,11 +10,11 @@ const AdviceColumn: React.FC<AdviceColumnProps> = ({
   return (
     <div className={`w-full flex flex-col items-center${className}`}>
       <AdviceCard title={title} />
-      <img className="w-2xl mt-18 absolute" src="/images/advice-vector.svg" alt="" />
+      <img className="w-2xl mt-20 absolute" src="/images/advice-vector.svg" alt="" />
       <img
         src={petImage}
         alt={petImageAlt}
-        className="z-10 w-11/12 rounded-bl-[13rem] rounded-br-[20rem]"
+        className="z-10 w-11/12 rounded-bl-[14rem] rounded-br-[21rem]"
       />
     </div>
   );
